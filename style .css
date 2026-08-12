@@ -12,8 +12,8 @@
   --red: #f87171;
   --green: #4ade80;
 
-  --font-display: 'Space Grotesk', sans-serif;
-  --font-body: 'Inter', sans-serif;
+  --font-display: 'Plus Jakarta Sans', sans-serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
 
   --radius-lg: 20px;
@@ -237,6 +237,32 @@ code {
 .stat-label {
   font-size: 0.85rem;
   color: var(--text-muted);
+}
+
+/* ============ SPLIT LAYOUT (label + content, fills width) ============ */
+.split {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 60px;
+  align-items: start;
+}
+.split__label {
+  position: sticky;
+  top: 100px;
+}
+.split__content {
+  min-width: 0;
+}
+.split__content > .body-text,
+.split__content > .pull-quote,
+.split__content > p,
+.split__content > .callout,
+.split__content > .numbered-list,
+.split__content > .finding > .body-text {
+  max-width: 640px;
+}
+.split__content .finding__q {
+  max-width: 640px;
 }
 
 /* ============ SECTIONS ============ */
@@ -567,6 +593,12 @@ code {
   .bento { grid-template-columns: repeat(2, 1fr); }
   .hero__stats { grid-template-columns: repeat(2, 1fr); }
   .method-grid { grid-template-columns: 1fr; }
+  .split { grid-template-columns: 220px 1fr; gap: 36px; }
+}
+
+@media (max-width: 820px) {
+  .split { grid-template-columns: 1fr; gap: 20px; }
+  .split__label { position: static; }
 }
 
 @media (max-width: 640px) {

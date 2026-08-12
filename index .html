@@ -7,7 +7,7 @@
 <meta name="description" content="Analisis 30 tahun data historis IHSG: pertumbuhan, krisis, volatilitas, musiman, dan volume perdagangan. EDA & statistical validation dengan Python.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -70,13 +70,16 @@
 
   <!-- ============ TENTANG DATASET ============ -->
   <section class="section">
-    <div class="container container--narrow">
-      <p class="section-eyebrow">Tentang Dataset</p>
-      <h2 class="section-title">Data apa yang dianalisis?</h2>
-      <p class="section-lead">
-        Sebelum masuk ke analisis, penting untuk memahami dulu bentuk data mentahnya — supaya semua angka dan grafik di halaman ini punya konteks yang jelas.
-      </p>
-
+    <div class="container">
+    <div class="split">
+      <div class="split__label">
+        <p class="section-eyebrow">Tentang Dataset</p>
+        <h2 class="section-title">Data apa yang dianalisis?</h2>
+        <p class="section-lead">
+          Sebelum masuk ke analisis, penting untuk memahami dulu bentuk data mentahnya — supaya semua angka dan grafik di halaman ini punya konteks yang jelas.
+        </p>
+      </div>
+      <div class="split__content">
       <div class="dataset-meta">
         <div class="dataset-meta__item">
           <span class="dataset-meta__num">7.681</span>
@@ -115,14 +118,20 @@
       <div class="callout">
         <strong>Catatan kualitas data:</strong> Data bersih — tidak ada nilai kosong atau tanggal duplikat, dan struktur harga (High selalu ≥ Low/Open/Close, dst) valid secara logis. Ditemukan 109 baris dengan <code>Volume = 0</code>, hampir seluruhnya di tahun 1995 — kemungkinan besar karena pencatatan volume belum konsisten di masa awal bursa Indonesia beroperasi. Baris ini tetap dipakai (bukan dihapus) karena kolom <code>Close</code>-nya tetap valid, namun dicatat sebagai keterbatasan data saat menafsirkan analisis terkait Volume.
       </div>
+      </div>
+    </div>
     </div>
   </section>
 
   <!-- ============ BUSINESS PROBLEM ============ -->
   <section class="section section--alt">
-    <div class="container container--narrow">
+    <div class="container">
+    <div class="split">
+      <div class="split__label">
       <p class="section-eyebrow">Business Problem</p>
       <h2 class="section-title">Pertanyaan riset utama</h2>
+      </div>
+      <div class="split__content">
       <blockquote class="pull-quote">
         Bagaimana pola pertumbuhan, volatilitas <span class="term">(seberapa besar &amp; sering harga naik-turun dalam periode tertentu)</span>, dan siklus krisis-pemulihan IHSG selama periode 1995–2025 dapat memberikan gambaran mengenai karakteristik risiko dan perilaku pasar modal Indonesia dalam jangka panjang?
       </blockquote>
@@ -139,16 +148,21 @@
       <p class="body-text muted">
         Target pembaca temuan ini adalah investor ritel maupun analis yang ingin memahami karakteristik risiko jangka panjang pasar modal Indonesia sebagai dasar pengambilan keputusan — bukan sebagai sinyal beli/jual jangka pendek.
       </p>
+      </div>
+    </div>
     </div>
   </section>
 
   <!-- ============ ANALYSIS APPROACH ============ -->
   <section class="section">
-    <div class="container container--narrow">
+    <div class="container">
+    <div class="split">
+      <div class="split__label">
       <p class="section-eyebrow">Analysis Approach</p>
       <h2 class="section-title">Alur pengerjaan</h2>
       <p class="section-lead">Bagian ini menjelaskan tahapan kerja dari data mentah sampai insight jadi — supaya pembaca teknis bisa menilai metodologinya, dan pembaca non-teknis paham prosesnya tidak sekadar "lihat grafik lalu simpulkan".</p>
-
+      </div>
+      <div class="split__content">
       <div class="flow">
         <div class="flow__step">
           <span class="flow__num">Data Validation</span>
@@ -181,6 +195,8 @@
         <span class="tool-chip">Seaborn</span>
         <span class="tool-chip">Tableau</span>
       </div>
+      </div>
+    </div>
     </div>
   </section>
 
@@ -217,9 +233,13 @@
 
   <!-- ============ DEEP DIVE ============ -->
   <section class="section">
-    <div class="container container--narrow">
+    <div class="container">
+    <div class="split">
+      <div class="split__label">
       <p class="section-eyebrow">Deep Dive Findings</p>
       <h2 class="section-title">Jawaban per pertanyaan riset</h2>
+      </div>
+      <div class="split__content">
 
       <!-- Q1 -->
       <article class="finding">
@@ -291,18 +311,23 @@
           <strong>Insight:</strong> Meski korelasi hari-sama tercatat "signifikan" secara statistik, nilainya (0,0337) sangat mendekati nol — artinya hubungannya nyaris tidak ada secara praktis. Volume perdagangan saja <strong>tidak cukup kuat</strong> untuk dijadikan indikator arah harga. Lonjakan volume bisa terjadi baik saat pasar naik maupun turun (misalnya saat panic selling), sehingga Volume lebih cocok dipakai sebagai indikator intensitas aktivitas pasar, bukan sinyal arah harga mandiri.
         </div>
       </article>
+      </div>
+    </div>
     </div>
   </section>
 
   <!-- ============ STATISTICAL VALIDATION ============ -->
   <section class="section section--alt">
-    <div class="container container--narrow">
+    <div class="container">
+    <div class="split">
+      <div class="split__label">
       <p class="section-eyebrow">Statistical Validation</p>
       <h2 class="section-title">Mengapa perlu diuji secara statistik?</h2>
       <p class="section-lead">
         Pola yang "terlihat" di grafik belum tentu benar-benar berarti — bisa saja itu kebetulan acak. Bagian ini menjelaskan uji statistik yang dipakai untuk mengecek apakah temuan di atas cukup meyakinkan untuk dipercaya, atau perlu dipandang dengan hati-hati.
       </p>
-
+      </div>
+      <div class="split__content">
       <div class="method-grid">
         <div class="method-card">
           <h3>Kruskal-Wallis Test</h3>
@@ -360,6 +385,8 @@
           Data historis menunjukkan pemulihan pasca-krisis, meski butuh waktu, secara konsisten terjadi — sehingga panic selling saat krisis berpotensi merugikan investor jangka panjang.
         </li>
       </ol>
+      </div>
+    </div>
     </div>
   </section>
 
