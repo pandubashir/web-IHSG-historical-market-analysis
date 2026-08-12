@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Analisis Historis IHSG (1995–2025) — Case Study | Pandu Bashir Alamin</title>
-<meta name="description" content="Analisis 30 tahun data historis IHSG: pertumbuhan, krisis, volatilitas, musiman, dan volume perdagangan. EDA &amp; statistical validation dengan Python.">
+<title>Analisis Historis IHSG (1995–2026) — Case Study | Pandu Bashir Alamin</title>
+<meta name="description" content="Analisis 31 tahun data historis IHSG: pertumbuhan, krisis, volatilitas, musiman, dan volume perdagangan. EDA &amp; statistical validation dengan Python.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
@@ -26,9 +26,9 @@
     <div class="container">
       <p class="eyebrow">Case Study</p>
       <h1 class="hero__title">
-        Analisis Historis<br><span class="text-gradient">IHSG 1995–2025</span>
+        Analisis Historis<br><span class="text-gradient">IHSG 1995–2026</span>
       </h1>
-      <p class="hero__subtitle">30 Tahun Pergerakan Pasar Modal Indonesia — Pertumbuhan, Krisis, dan Karakteristik Risiko</p>
+      <p class="hero__subtitle">31 Tahun Pergerakan Pasar Modal Indonesia — Pertumbuhan, Krisis, dan Karakteristik Risiko</p>
 
       <div class="tag-list">
         <span class="tag">DATA ANALYSIS</span>
@@ -39,7 +39,7 @@
       </div>
 
       <p class="hero__desc">
-        Sebuah proyek analisis data historis <em>end-to-end</em> yang menelusuri 7.681 hari perdagangan Indeks Harga Saham Gabungan (IHSG) sepanjang 30 tahun (1995–2025), untuk memahami pola pertumbuhan, siklus krisis-pemulihan, volatilitas, musiman, dan hubungan volume-harga. Temuan divalidasi menggunakan uji statistik non-parametrik dengan Python, dan disajikan melalui dashboard Tableau interaktif.
+        Sebuah proyek analisis data historis <em>end-to-end</em> yang menelusuri 7.681 hari perdagangan Indeks Harga Saham Gabungan (IHSG) sepanjang 31 tahun (1995–2026), untuk memahami pola pertumbuhan, siklus krisis-pemulihan, volatilitas, musiman, dan hubungan volume-harga. Temuan divalidasi menggunakan uji statistik non-parametrik dengan Python, dan disajikan melalui dashboard Tableau interaktif.
       </p>
 
       <div class="hero__actions">
@@ -49,7 +49,7 @@
 
       <div class="hero__stats">
         <div class="hero__stat">
-          <span class="stat-num">30</span>
+          <span class="stat-num">31</span>
           <span class="stat-label">Tahun Data</span>
         </div>
         <div class="hero__stat">
@@ -90,7 +90,7 @@
           <span class="dataset-meta__label">Kolom asli</span>
         </div>
         <div class="dataset-meta__item">
-          <span class="dataset-meta__num">1995–2025</span>
+          <span class="dataset-meta__num">1995–2026</span>
           <span class="dataset-meta__label">Rentang waktu</span>
         </div>
       </div>
@@ -133,13 +133,13 @@
       </div>
       <div class="split__content">
       <blockquote class="pull-quote">
-        Bagaimana pola pertumbuhan, volatilitas <span class="term">(seberapa besar &amp; sering harga naik-turun dalam periode tertentu)</span>, dan siklus krisis-pemulihan IHSG selama periode 1995–2025 dapat memberikan gambaran mengenai karakteristik risiko dan perilaku pasar modal Indonesia dalam jangka panjang?
+        Bagaimana pola pertumbuhan, volatilitas <span class="term">(seberapa besar &amp; sering harga naik-turun dalam periode tertentu)</span>, dan siklus krisis-pemulihan IHSG selama periode 1995–2026 dapat memberikan gambaran mengenai karakteristik risiko dan perilaku pasar modal Indonesia dalam jangka panjang?
       </blockquote>
       <p class="body-text">
         Pertanyaan besar ini kemudian dipecah menjadi 5 pertanyaan turunan yang lebih spesifik dan bisa dijawab langsung dari data historis harga IHSG:
       </p>
       <ol class="numbered-list">
-        <li>Bagaimana pertumbuhan IHSG dari 1995–2025, dan dekade mana yang paling cepat tumbuh vs paling stagnan?</li>
+        <li>Bagaimana pertumbuhan IHSG dari 1995–2026, dan dekade mana yang paling cepat tumbuh vs paling stagnan?</li>
         <li>Kapan drawdown <span class="term">(penurunan harga dari titik tertinggi sebelumnya)</span> terbesar terjadi, seberapa dalam, dan berapa lama pemulihannya?</li>
         <li>Apakah volatilitas harian cenderung naik, turun, atau stabil dari dekade ke dekade?</li>
         <li>Adakah pola musiman (misalnya kenaikan harga menjelang akhir tahun) yang konsisten setiap tahun?</li>
@@ -208,9 +208,9 @@
 
       <div class="bento">
         <div class="bento__card">
-          <span class="bento__value">~16x</span>
-          <span class="bento__label">Pertumbuhan Kumulatif</span>
-          <p class="bento__desc">IHSG tumbuh dari 257 poin (1995) ke level ribuan poin — namun tidak linear, sangat dipengaruhi siklus krisis per dekade.</p>
+          <span class="bento__value">13,26x</span>
+          <span class="bento__label">Pertumbuhan Kumulatif <span class="term">(nilai IHSG sekarang dibanding awal 1995)</span></span>
+          <p class="bento__desc">IHSG tumbuh dari 470 poin (Januari 1995) ke sekitar 6.234 poin (data terakhir) — namun tidak linear, sangat dipengaruhi siklus krisis per dekade.</p>
         </div>
         <div class="bento__card">
           <span class="bento__value">-65,33%</span>
@@ -243,8 +243,8 @@
 
       <!-- Q1 -->
       <article class="finding">
-        <h3 class="finding__q">Q1 — Bagaimana pertumbuhan IHSG dari 1995–2025?</h3>
-        <p class="body-text">IHSG menunjukkan tren pertumbuhan jangka panjang yang jelas, dari level sekitar <strong>257 poin</strong> di awal 1995 menjadi ribuan poin pada periode terakhir data. Mayoritas pertumbuhan besar terjadi setelah IHSG pulih dari Krisis 1998, dengan akselerasi signifikan di dekade 2000-an dan 2010-an.</p>
+        <h3 class="finding__q">Q1 — Bagaimana pertumbuhan IHSG dari 1995–2026?</h3>
+        <p class="body-text">IHSG menunjukkan tren pertumbuhan jangka panjang yang jelas, dari level sekitar <strong>470 poin</strong> di awal Januari 1995 menjadi sekitar <strong>6.234 poin</strong> pada data terakhir — tumbuh sekitar 13,26 kali lipat. Mayoritas pertumbuhan besar terjadi setelah IHSG pulih dari Krisis 1998, dengan akselerasi signifikan di dekade 2000-an dan 2010-an.</p>
         <div class="callout callout--insight">
           <strong>Insight:</strong> Dekade dengan return tertinggi umumnya adalah periode <em>setelah</em> pemulihan krisis (recovery rally), sementara dekade yang mencakup krisis besar cenderung menunjukkan return lebih rendah. Investor jangka panjang secara historis diuntungkan oleh tren pertumbuhan struktural ini, meski harus melewati volatilitas signifikan di periode tertentu.
         </div>
@@ -285,7 +285,7 @@
       <!-- Q4 -->
       <article class="finding">
         <h3 class="finding__q">Q4 — Adakah pola musiman yang konsisten setiap tahun?</h3>
-        <p class="body-text">Rata-rata return harian per bulan (digabung dari 30 tahun data) menunjukkan variasi antar bulan — termasuk indikasi pola yang sering diasosiasikan dengan <em>window dressing</em> <span class="term">(kenaikan harga saham menjelang akhir tahun karena manajer investasi "mempercantik" portofolionya)</span> di bulan Desember. Namun, saat dipecah per tahun lewat heatmap, warna (positif/negatif) pada bulan yang sama ternyata bervariasi cukup besar antar tahun.</p>
+        <p class="body-text">Rata-rata return harian per bulan (digabung dari 31 tahun data) menunjukkan variasi antar bulan — termasuk indikasi pola yang sering diasosiasikan dengan <em>window dressing</em> <span class="term">(kenaikan harga saham menjelang akhir tahun karena manajer investasi "mempercantik" portofolionya)</span> di bulan Desember. Namun, saat dipecah per tahun lewat heatmap, warna (positif/negatif) pada bulan yang sama ternyata bervariasi cukup besar antar tahun.</p>
         <div class="callout callout--insight">
           <strong>Insight:</strong> Ada indikasi pola musiman pada rata-rata jangka panjang, tapi pola ini <strong>tidak konsisten terjadi di setiap tahun</strong> — kondisi makroekonomi tahunan tampak jadi faktor yang lebih dominan dibanding efek kalender semata. Strategi timing pasar berbasis kalender saja berisiko tinggi tanpa didukung analisis fundamental tambahan.
         </div>
@@ -353,7 +353,7 @@
       </div>
 
       <div class="callout callout--warning">
-        <strong>Disclaimer penting:</strong> "Signifikan secara statistik" <strong>bukan berarti sebab-akibat</strong>, dan bukan jaminan pola ini akan berulang di masa depan. Hasil ini menunjukkan pola historis 1995–2025, bukan prediksi pergerakan pasar ke depan. Return dan volatilitas dihitung dari <code>Daily Return (%)</code> — perubahan persentase harian pada kolom <code>Close</code> — karena harga absolut tidak sebanding antar periode akibat pertumbuhan indeks dalam skala besar sepanjang 30 tahun.
+        <strong>Disclaimer penting:</strong> "Signifikan secara statistik" <strong>bukan berarti sebab-akibat</strong>, dan bukan jaminan pola ini akan berulang di masa depan. Hasil ini menunjukkan pola historis 1995–2026, bukan prediksi pergerakan pasar ke depan. Return dan volatilitas dihitung dari <code>Daily Return (%)</code> — perubahan persentase harian pada kolom <code>Close</code> — karena harga absolut tidak sebanding antar periode akibat pertumbuhan indeks dalam skala besar sepanjang 31 tahun.
       </div>
       </div>
     </div>
@@ -401,7 +401,7 @@
     <div class="container">
       <p class="section-eyebrow">Interactive Dashboard</p>
       <h2 class="section-title">Eksplorasi data secara langsung</h2>
-      <p class="section-lead">Dashboard Tableau berikut memungkinkan Anda menjelajahi data IHSG 30 tahun secara interaktif — filter per periode, lihat tren, dan telusuri detail krisis.</p>
+      <p class="section-lead">Dashboard Tableau berikut memungkinkan Anda menjelajahi data IHSG 31 tahun secara interaktif — filter per periode, lihat tren, dan telusuri detail krisis.</p>
     </div>
     <div class="dashboard-embed">
       <iframe
