@@ -210,17 +210,17 @@
         <div class="bento__card">
           <span class="bento__value">13,26x</span>
           <span class="bento__label">Pertumbuhan Kumulatif <span class="term">(nilai IHSG sekarang dibanding awal 1995)</span></span>
-          <p class="bento__desc">IHSG tumbuh dari 470 poin (Januari 1995) ke sekitar 6.234 poin (data terakhir) — namun tidak linear, sangat dipengaruhi siklus krisis per dekade.</p>
+          <p class="bento__desc">Dari 470 poin <span class="term">(satuan indeks IHSG, bukan Rupiah)</span> di 2 Januari 1995, IHSG naik ke 6.234 poin di 3 Agustus 2026 (data terakhir) — setara kenaikan 1.226%, atau 13,26 kali lipat.</p>
         </div>
         <div class="bento__card">
           <span class="bento__value">-65,33%</span>
           <span class="bento__label">Drawdown <span class="term">(penurunan dari puncak)</span> Terdalam</span>
-          <p class="bento__desc">Terjadi saat Krisis 1998 — drawdown ekstrem terbesar dari tiga krisis besar yang dianalisis (1998, 2008, 2020).</p>
+          <p class="bento__desc">Dari puncak 740,80 poin <span class="term">(ATH — All-Time High, titik tertinggi yang pernah dicapai sebelumnya)</span>, IHSG anjlok ke 256,82 poin saat dasar Krisis 1998 (21 Sep 1998) — penurunan 65,33%, yang terdalam dari tiga krisis besar yang dianalisis (1998, 2008, 2020).</p>
         </div>
         <div class="bento__card">
           <span class="bento__value">1.936 hari</span>
           <span class="bento__label">Pemulihan Terlama</span>
-          <p class="bento__desc">Waktu IHSG kembali ke level tertinggi sebelum Krisis 1998 — jauh lebih lama dibanding pemulihan pasca-Krisis 2008 (524 hari).</p>
+          <p class="bento__desc">Setara ±5,3 tahun — dari titik terendah Krisis 1998 (21 Sep 1998) sampai IHSG kembali ke level tertinggi sebelumnya (9 Jan 2004). Jauh lebih lama dibanding pemulihan pasca-Krisis 2008 (524 hari, ±1,4 tahun).</p>
         </div>
         <div class="bento__card">
           <span class="bento__value">p = 0,0257</span>
@@ -228,6 +228,8 @@
           <p class="bento__desc">Uji Kruskal-Wallis membuktikan volatilitas berbeda signifikan antar dekade — bukan kebetulan acak.</p>
         </div>
       </div>
+
+      <p class="bento-note">Catatan: Kartu 1 &amp; 2 menceritakan garis waktu yang sama (IHSG 1995–2026), tapi menyoroti titik berbeda — Kartu 1 membandingkan titik awal vs akhir data, Kartu 2 menyoroti satu episode krisis (1998) di tengah perjalanan itu.</p>
     </div>
   </section>
 
@@ -333,6 +335,25 @@
           <h3>Kruskal-Wallis Test</h3>
           <p class="body-text"><strong>Kenapa metode ini?</strong> Dipilih karena distribusi return finansial umumnya tidak normal (fat-tailed / punya banyak nilai ekstrem), sehingga uji parametrik seperti ANOVA yang mengasumsikan data normal kurang tepat. Kruskal-Wallis adalah versi non-parametrik untuk membandingkan lebih dari 2 kelompok — di sini, 4 kelompok dekade.</p>
           <p class="body-text"><strong>Cara membaca hasilnya:</strong> "Signifikan" (p &lt; 0,05) berarti perbedaan volatilitas antar dekade kemungkinan besar <em>bukan kebetulan acak</em> — cukup meyakinkan secara statistik bahwa dekade-dekade tersebut memang punya karakter volatilitas yang berbeda.</p>
+          <p class="body-text"><strong>Apa itu p-value?</strong> P-value adalah angka yang menunjukkan seberapa besar kemungkinan hasil ini muncul cuma karena kebetulan acak, bukan pola yang nyata. Semakin kecil p-value, semakin kecil kemungkinan itu kebetulan. Ambang umum yang dipakai: di bawah 0,05 dianggap cukup meyakinkan bukan kebetulan.</p>
+          <p class="body-text muted"><strong>Penting diluruskan:</strong> P-value kecil hanya menunjukkan bahwa perbedaan antar dekade ini nyata — bukan mengukur seberapa besar bedanya (itu ukuran lain yang tidak dihitung di sini). Uji ini juga tidak bilang dekade mana yang beda.</p>
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead>
+                <tr><th>Dekade</th><th>Std Dev Return Harian</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>1990-an</td><td>2,039%</td></tr>
+                <tr><td>2000-an</td><td>1,547%</td></tr>
+                <tr><td>2010-an</td><td>1,041%</td></tr>
+                <tr><td>2020-an</td><td>1,166%</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="body-text"><strong>Apa itu Standar Deviasi (Std Dev)?</strong> Mengukur seberapa jauh angka-angka biasanya menyimpang dari rata-ratanya. Semakin besar angkanya, semakin liar naik-turun datanya; semakin kecil, semakin stabil. Di sini dipakai untuk mengukur volatilitas: makin besar standar deviasi return harian, makin sering &amp; besar harga naik-turun di dekade itu.</p>
+          <div class="callout callout--insight">
+            <strong>Insight dari tabel:</strong> Polanya masuk akal, bukan disebabkan 1 dekade aneh sendiri — volatilitas tertinggi di 1990-an (era Krisis 1998), menurun bertahap ke 2010-an (paling stabil), lalu sedikit naik lagi di 2020-an (era Covid-19).
+          </div>
           <div class="stat-row">
             <span class="stat-chip">H-statistic: <strong>9,29</strong></span>
             <span class="stat-chip">P-value: <strong>0,02567</strong></span>
