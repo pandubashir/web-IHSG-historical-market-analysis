@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Analisis Historis IHSG (1995–2026) — Case Study | Pandu Bashir Alamin</title>
+<title>Analisis Historis IHSG (1995–2026) - Case Study | Pandu Bashir Alamin</title>
 <meta name="description" content="Analisis 31 tahun data historis IHSG: pertumbuhan, krisis, volatilitas, musiman, dan volume perdagangan. EDA &amp; statistical validation dengan Python.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,445 +13,445 @@
 <body>
 
 <header class="site-header">
-  <div class="site-header__inner">
-    <span class="site-header__name">Pandu Bashir Alamin.</span>
-    <a href="https://www.pandubashir.my.id/" class="btn btn--ghost btn--small">← Back to Portfolio</a>
-  </div>
+ <div class="site-header__inner">
+ <span class="site-header__name">Pandu Bashir Alamin.</span>
+ <a href="https://www.pandubashir.my.id/" class="btn btn--ghost btn--small">← Back to Portfolio</a>
+ </div>
 </header>
 
 <main>
 
-  <!-- ============ HERO ============ -->
-  <section class="hero">
-    <div class="container">
-      <p class="eyebrow">Case Study</p>
-      <h1 class="hero__title">
-        Analisis Historis<br><span class="text-gradient">IHSG 1995–2026</span>
-      </h1>
-      <p class="hero__subtitle">31 Tahun Pergerakan Pasar Modal Indonesia — Pertumbuhan, Krisis, dan Karakteristik Risiko</p>
+ <!-- ============ HERO ============ -->
+ <section class="hero">
+ <div class="container">
+ <p class="eyebrow">Case Study</p>
+ <h1 class="hero__title">
+ Analisis Historis<br><span class="text-gradient">IHSG 1995–2026</span>
+ </h1>
+ <p class="hero__subtitle">31 Tahun Pergerakan Pasar Modal Indonesia - Pertumbuhan, Krisis, dan Karakteristik Risiko</p>
 
-      <div class="tag-list">
-        <span class="tag">DATA ANALYSIS</span>
-        <span class="tag">EDA</span>
-        <span class="tag">PYTHON</span>
-        <span class="tag">STATISTICAL ANALYSIS</span>
-        <span class="tag">TABLEAU</span>
-      </div>
+ <div class="tag-list">
+ <span class="tag">DATA ANALYSIS</span>
+ <span class="tag">EDA</span>
+ <span class="tag">PYTHON</span>
+ <span class="tag">STATISTICAL ANALYSIS</span>
+ <span class="tag">TABLEAU</span>
+ </div>
 
-      <p class="hero__desc">
-        Sebuah proyek analisis data historis <em>end-to-end</em> yang menelusuri 7.681 hari perdagangan Indeks Harga Saham Gabungan (IHSG) sepanjang 31 tahun (1995–2026), untuk memahami pola pertumbuhan, siklus krisis-pemulihan, volatilitas, musiman, dan hubungan volume-harga. Temuan divalidasi menggunakan uji statistik non-parametrik dengan Python, dan disajikan melalui dashboard Tableau interaktif.
-      </p>
+ <p class="hero__desc">
+ Sebuah proyek analisis data historis <em>end-to-end</em> yang menelusuri 7.681 hari perdagangan Indeks Harga Saham Gabungan (IHSG) sepanjang 31 tahun (1995–2026), untuk memahami pola pertumbuhan, siklus krisis-pemulihan, volatilitas, musiman, dan hubungan volume-harga. Temuan divalidasi menggunakan uji statistik non-parametrik dengan Python, dan disajikan melalui dashboard Tableau interaktif.
+ </p>
 
-      <div class="hero__actions">
-        <a href="https://github.com/pandubashir/IHSG-historical-market-analysis" target="_blank" rel="noopener" class="btn btn--primary">View Source Code ↗</a>
-        <a href="#dashboard" class="btn btn--outline">Lihat Dashboard Interaktif ↓</a>
-      </div>
+ <div class="hero__actions">
+ <a href="https://github.com/pandubashir/IHSG-historical-market-analysis" target="_blank" rel="noopener" class="btn btn--primary">View Source Code ↗</a>
+ <a href="#dashboard" class="btn btn--outline">Lihat Dashboard Interaktif ↓</a>
+ </div>
 
-      <div class="hero__stats">
-        <div class="hero__stat">
-          <span class="stat-num">31</span>
-          <span class="stat-label">Tahun Data</span>
-        </div>
-        <div class="hero__stat">
-          <span class="stat-num">7.681</span>
-          <span class="stat-label">Hari Perdagangan</span>
-        </div>
-        <div class="hero__stat">
-          <span class="stat-num">3</span>
-          <span class="stat-label">Krisis Besar Dianalisis</span>
-        </div>
-        <div class="hero__stat">
-          <span class="stat-num">5</span>
-          <span class="stat-label">Pertanyaan Riset</span>
-        </div>
-      </div>
-    </div>
-  </section>
+ <div class="hero__stats">
+ <div class="hero__stat">
+ <span class="stat-num">31</span>
+ <span class="stat-label">Tahun Data</span>
+ </div>
+ <div class="hero__stat">
+ <span class="stat-num">7.681</span>
+ <span class="stat-label">Hari Perdagangan</span>
+ </div>
+ <div class="hero__stat">
+ <span class="stat-num">3</span>
+ <span class="stat-label">Krisis Besar Dianalisis</span>
+ </div>
+ <div class="hero__stat">
+ <span class="stat-num">5</span>
+ <span class="stat-label">Pertanyaan Riset</span>
+ </div>
+ </div>
+ </div>
+ </section>
 
-  <!-- ============ TENTANG DATASET ============ -->
-  <section class="section">
-    <div class="container">
-    <div class="split">
-      <div class="split__label">
-        <p class="section-eyebrow">Tentang Dataset</p>
-        <h2 class="section-title">Data apa yang dianalisis?</h2>
-        <p class="section-lead">
-          Sebelum masuk ke analisis, penting untuk memahami dulu bentuk data mentahnya — supaya semua angka dan grafik di halaman ini punya konteks yang jelas.
-        </p>
-      </div>
-      <div class="split__content">
-      <div class="dataset-meta">
-        <div class="dataset-meta__item">
-          <span class="dataset-meta__num">7.681</span>
-          <span class="dataset-meta__label">Baris (hari perdagangan)</span>
-        </div>
-        <div class="dataset-meta__item">
-          <span class="dataset-meta__num">6</span>
-          <span class="dataset-meta__label">Kolom asli</span>
-        </div>
-        <div class="dataset-meta__item">
-          <span class="dataset-meta__num">1995–2026</span>
-          <span class="dataset-meta__label">Rentang waktu</span>
-        </div>
-      </div>
+ <!-- ============ TENTANG DATASET ============ -->
+ <section class="section">
+ <div class="container">
+ <div class="split">
+ <div class="split__label">
+ <p class="section-eyebrow">Tentang Dataset</p>
+ <h2 class="section-title">Data apa yang dianalisis?</h2>
+ <p class="section-lead">
+ Sebelum masuk ke analisis, penting untuk memahami dulu bentuk data mentahnya - supaya semua angka dan grafik di halaman ini punya konteks yang jelas.
+ </p>
+ </div>
+ <div class="split__content">
+ <div class="dataset-meta">
+ <div class="dataset-meta__item">
+ <span class="dataset-meta__num">7.681</span>
+ <span class="dataset-meta__label">Baris (hari perdagangan)</span>
+ </div>
+ <div class="dataset-meta__item">
+ <span class="dataset-meta__num">6</span>
+ <span class="dataset-meta__label">Kolom asli</span>
+ </div>
+ <div class="dataset-meta__item">
+ <span class="dataset-meta__num">1995–2026</span>
+ <span class="dataset-meta__label">Rentang waktu</span>
+ </div>
+ </div>
 
-      <p class="body-text">
-        Keenam kolom di bawah ini adalah <strong>seluruh kolom mentah</strong> dari sumber data (<code>ihsg_daily.csv</code>) — bukan hasil seleksi fitur. Artinya, tidak ada kolom asli yang dibuang. Dari 6 kolom mentah ini, dibuat sejumlah kolom turunan tambahan (misalnya <code>daily_return</code>, <code>drawdown</code>) khusus untuk kebutuhan analisis — bukan bagian dari data mentahnya, tapi hasil olahan yang akan dijelaskan di bagian relevan.
-      </p>
+ <p class="body-text">
+ Keenam kolom di bawah ini adalah <strong>seluruh kolom mentah</strong> dari sumber data (<code>ihsg_daily.csv</code>) - bukan hasil seleksi fitur. Artinya, tidak ada kolom asli yang dibuang. Dari 6 kolom mentah ini, dibuat sejumlah kolom turunan tambahan (misalnya <code>daily_return</code>, <code>drawdown</code>) khusus untuk kebutuhan analisis - bukan bagian dari data mentahnya, tapi hasil olahan yang akan dijelaskan di bagian relevan.
+ </p>
 
-      <div class="table-wrap">
-        <table class="data-table">
-          <thead>
-            <tr><th>Kolom</th><th>Tipe</th><th>Penjelasan Awam</th></tr>
-          </thead>
-          <tbody>
-            <tr><td><code>Date</code></td><td>Tanggal</td><td>Tanggal spesifik saat bursa saham beroperasi dan melakukan transaksi.</td></tr>
-            <tr><td><code>Open</code></td><td>Angka</td><td>Posisi IHSG saat pasar resmi dibuka di sesi pagi.</td></tr>
-            <tr><td><code>High</code></td><td>Angka</td><td>Titik tertinggi yang dicapai IHSG dalam satu hari perdagangan.</td></tr>
-            <tr><td><code>Low</code></td><td>Angka</td><td>Titik terendah yang disentuh IHSG pada hari perdagangan tersebut.</td></tr>
-            <tr><td><code>Close</code></td><td>Angka</td><td>Nilai akhir IHSG saat pasar ditutup — kolom yang paling sering dipakai untuk melihat tren jangka panjang, dan menjadi basis hampir seluruh analisis di halaman ini.</td></tr>
-            <tr><td><code>Volume</code></td><td>Angka</td><td>Total unit saham yang diperdagangkan pada tanggal tersebut.</td></tr>
-          </tbody>
-        </table>
-      </div>
+ <div class="table-wrap">
+ <table class="data-table">
+ <thead>
+ <tr><th>Kolom</th><th>Tipe</th><th>Penjelasan Awam</th></tr>
+ </thead>
+ <tbody>
+ <tr><td><code>Date</code></td><td>Tanggal</td><td>Tanggal spesifik saat bursa saham beroperasi dan melakukan transaksi.</td></tr>
+ <tr><td><code>Open</code></td><td>Angka</td><td>Posisi IHSG saat pasar resmi dibuka di sesi pagi.</td></tr>
+ <tr><td><code>High</code></td><td>Angka</td><td>Titik tertinggi yang dicapai IHSG dalam satu hari perdagangan.</td></tr>
+ <tr><td><code>Low</code></td><td>Angka</td><td>Titik terendah yang disentuh IHSG pada hari perdagangan tersebut.</td></tr>
+ <tr><td><code>Close</code></td><td>Angka</td><td>Nilai akhir IHSG saat pasar ditutup - kolom yang paling sering dipakai untuk melihat tren jangka panjang, dan menjadi basis hampir seluruh analisis di halaman ini.</td></tr>
+ <tr><td><code>Volume</code></td><td>Angka</td><td>Total unit saham yang diperdagangkan pada tanggal tersebut.</td></tr>
+ </tbody>
+ </table>
+ </div>
 
-      <div class="callout">
-        <strong>Catatan kualitas data:</strong> Data bersih — tidak ada nilai kosong atau tanggal duplikat, dan struktur harga (High selalu ≥ Low/Open/Close, dst) valid secara logis. Ditemukan 109 baris dengan <code>Volume = 0</code>, hampir seluruhnya di tahun 1995 — kemungkinan besar karena pencatatan volume belum konsisten di masa awal bursa Indonesia beroperasi. Baris ini tetap dipakai (bukan dihapus) karena kolom <code>Close</code>-nya tetap valid, namun dicatat sebagai keterbatasan data saat menafsirkan analisis terkait Volume.
-      </div>
-      </div>
-    </div>
-    </div>
-  </section>
+ <div class="callout">
+ <strong>Catatan kualitas data:</strong> Data bersih - tidak ada nilai kosong atau tanggal duplikat, dan struktur harga (High selalu ≥ Low/Open/Close, dst) valid secara logis. Ditemukan 109 baris dengan <code>Volume = 0</code>, hampir seluruhnya di tahun 1995 - kemungkinan besar karena pencatatan volume belum konsisten di masa awal bursa Indonesia beroperasi. Baris ini tetap dipakai (bukan dihapus) karena kolom <code>Close</code>-nya tetap valid, namun dicatat sebagai keterbatasan data saat menafsirkan analisis terkait Volume.
+ </div>
+ </div>
+ </div>
+ </div>
+ </section>
 
-  <!-- ============ BUSINESS PROBLEM ============ -->
-  <section class="section section--alt">
-    <div class="container">
-    <div class="split">
-      <div class="split__label">
-      <p class="section-eyebrow">Business Problem</p>
-      <h2 class="section-title">Pertanyaan riset utama</h2>
-      </div>
-      <div class="split__content">
-      <blockquote class="pull-quote">
-        Bagaimana pola pertumbuhan, volatilitas <span class="term">(seberapa besar &amp; sering harga naik-turun dalam periode tertentu)</span>, dan siklus krisis-pemulihan IHSG selama periode 1995–2026 dapat memberikan gambaran mengenai karakteristik risiko dan perilaku pasar modal Indonesia dalam jangka panjang?
-      </blockquote>
-      <p class="body-text">
-        Pertanyaan besar ini kemudian dipecah menjadi 5 pertanyaan turunan yang lebih spesifik dan bisa dijawab langsung dari data historis harga IHSG:
-      </p>
-      <ol class="numbered-list">
-        <li>Bagaimana pertumbuhan IHSG dari 1995–2026, dan dekade mana yang paling cepat tumbuh vs paling stagnan?</li>
-        <li>Kapan drawdown <span class="term">(penurunan harga dari titik tertinggi sebelumnya)</span> terbesar terjadi, seberapa dalam, dan berapa lama pemulihannya?</li>
-        <li>Apakah volatilitas harian cenderung naik, turun, atau stabil dari dekade ke dekade?</li>
-        <li>Adakah pola musiman (misalnya kenaikan harga menjelang akhir tahun) yang konsisten setiap tahun?</li>
-        <li>Apakah lonjakan volume perdagangan berkaitan dengan besaran pergerakan harga di hari yang sama atau hari berikutnya?</li>
-      </ol>
-      <p class="body-text muted">
-        Target pembaca temuan ini adalah investor ritel maupun analis yang ingin memahami karakteristik risiko jangka panjang pasar modal Indonesia sebagai dasar pengambilan keputusan — bukan sebagai sinyal beli/jual jangka pendek.
-      </p>
-      </div>
-    </div>
-    </div>
-  </section>
+ <!-- ============ BUSINESS PROBLEM ============ -->
+ <section class="section section--alt">
+ <div class="container">
+ <div class="split">
+ <div class="split__label">
+ <p class="section-eyebrow">Business Problem</p>
+ <h2 class="section-title">Pertanyaan riset utama</h2>
+ </div>
+ <div class="split__content">
+ <blockquote class="pull-quote">
+ Bagaimana pola pertumbuhan, volatilitas <span class="term">(seberapa besar &amp; sering harga naik-turun dalam periode tertentu)</span>, dan siklus krisis-pemulihan IHSG selama periode 1995–2026 dapat memberikan gambaran mengenai karakteristik risiko dan perilaku pasar modal Indonesia dalam jangka panjang?
+ </blockquote>
+ <p class="body-text">
+ Pertanyaan besar ini kemudian dipecah menjadi 5 pertanyaan turunan yang lebih spesifik dan bisa dijawab langsung dari data historis harga IHSG:
+ </p>
+ <ol class="numbered-list">
+ <li>Bagaimana pertumbuhan IHSG dari 1995–2026, dan dekade mana yang paling cepat tumbuh vs paling stagnan?</li>
+ <li>Kapan drawdown <span class="term">(penurunan dari puncak tertinggi ke titik terendah berikutnya, bisa berlangsung berbulan-bulan/bertahun-tahun, misal dari puncak 1997 sampai titik terendah 1998)</span> terbesar terjadi, seberapa dalam, dan berapa lama pemulihannya?</li>
+ <li>Apakah volatilitas harian cenderung naik, turun, atau stabil dari dekade ke dekade?</li>
+ <li>Adakah pola musiman (misalnya kenaikan harga menjelang akhir tahun) yang konsisten setiap tahun?</li>
+ <li>Apakah lonjakan volume perdagangan berkaitan dengan besaran pergerakan harga di hari yang sama atau hari berikutnya?</li>
+ </ol>
+ <p class="body-text muted">
+ Target pembaca temuan ini adalah investor ritel maupun analis yang ingin memahami karakteristik risiko jangka panjang pasar modal Indonesia sebagai dasar pengambilan keputusan - bukan sebagai sinyal beli/jual jangka pendek.
+ </p>
+ </div>
+ </div>
+ </div>
+ </section>
 
-  <!-- ============ ANALYSIS APPROACH ============ -->
-  <section class="section">
-    <div class="container">
-    <div class="split">
-      <div class="split__label">
-      <p class="section-eyebrow">Analysis Approach</p>
-      <h2 class="section-title">Alur pengerjaan</h2>
-      <p class="section-lead">Bagian ini menjelaskan tahapan kerja dari data mentah sampai insight jadi — supaya pembaca teknis bisa menilai metodologinya, dan pembaca non-teknis paham prosesnya tidak sekadar "lihat grafik lalu simpulkan".</p>
-      </div>
-      <div class="split__content">
-      <div class="flow">
-        <div class="flow__step">
-          <span class="flow__num">Data Validation</span>
-          <p>Cek missing values, duplikat, konsistensi tanggal, dan logika harga (OHLC) — memastikan data layak dianalisis sebelum lanjut.</p>
-        </div>
-        <div class="flow__step">
-          <span class="flow__num">Feature Engineering</span>
-          <p>Membuat kolom turunan seperti <code>daily_return</code>, <code>drawdown</code>, dan <code>rolling volatility</code> dari kolom <code>Close</code> mentah.</p>
-        </div>
-        <div class="flow__step">
-          <span class="flow__num">Exploratory Data Analysis</span>
-          <p>Visualisasi tren, distribusi, dan pola per dekade/bulan untuk menjawab kelima pertanyaan riset.</p>
-        </div>
-        <div class="flow__step">
-          <span class="flow__num">Statistical Validation</span>
-          <p>Menguji apakah pola yang terlihat di grafik memang signifikan secara statistik, menggunakan uji non-parametrik.</p>
-        </div>
-        <div class="flow__step">
-          <span class="flow__num">Dashboarding</span>
-          <p>Menyajikan temuan dalam dashboard Tableau interaktif untuk eksplorasi lebih lanjut oleh pembaca.</p>
-        </div>
-      </div>
+ <!-- ============ ANALYSIS APPROACH ============ -->
+ <section class="section">
+ <div class="container">
+ <div class="split">
+ <div class="split__label">
+ <p class="section-eyebrow">Analysis Approach</p>
+ <h2 class="section-title">Alur pengerjaan</h2>
+ <p class="section-lead">Bagian ini menjelaskan tahapan kerja dari data mentah sampai insight jadi - supaya pembaca teknis bisa menilai metodologinya, dan pembaca non-teknis paham prosesnya tidak sekadar "lihat grafik lalu simpulkan".</p>
+ </div>
+ <div class="split__content">
+ <div class="flow">
+ <div class="flow__step">
+ <span class="flow__num">Data Validation</span>
+ <p>Cek missing values, duplikat, konsistensi tanggal, dan logika harga (OHLC) - memastikan data layak dianalisis sebelum lanjut.</p>
+ </div>
+ <div class="flow__step">
+ <span class="flow__num">Feature Engineering</span>
+ <p>Membuat kolom turunan seperti <code>daily_return</code>, <code>drawdown</code>, dan <code>rolling volatility</code> dari kolom <code>Close</code> mentah.</p>
+ </div>
+ <div class="flow__step">
+ <span class="flow__num">Exploratory Data Analysis</span>
+ <p>Visualisasi tren, distribusi, dan pola per dekade/bulan untuk menjawab kelima pertanyaan riset.</p>
+ </div>
+ <div class="flow__step">
+ <span class="flow__num">Statistical Validation</span>
+ <p>Menguji apakah pola yang terlihat di grafik memang signifikan secara statistik, menggunakan uji non-parametrik.</p>
+ </div>
+ <div class="flow__step">
+ <span class="flow__num">Dashboarding</span>
+ <p>Menyajikan temuan dalam dashboard Tableau interaktif untuk eksplorasi lebih lanjut oleh pembaca.</p>
+ </div>
+ </div>
 
-      <div class="tools-row">
-        <span class="tool-chip">Python</span>
-        <span class="tool-chip">pandas</span>
-        <span class="tool-chip">NumPy</span>
-        <span class="tool-chip">SciPy</span>
-        <span class="tool-chip">Matplotlib</span>
-        <span class="tool-chip">Seaborn</span>
-        <span class="tool-chip">Tableau</span>
-      </div>
-      </div>
-    </div>
-    </div>
-  </section>
+ <div class="tools-row">
+ <span class="tool-chip">Python</span>
+ <span class="tool-chip">pandas</span>
+ <span class="tool-chip">NumPy</span>
+ <span class="tool-chip">SciPy</span>
+ <span class="tool-chip">Matplotlib</span>
+ <span class="tool-chip">Seaborn</span>
+ <span class="tool-chip">Tableau</span>
+ </div>
+ </div>
+ </div>
+ </div>
+ </section>
 
-  <!-- ============ KEY FINDINGS ============ -->
-  <section class="section section--alt">
-    <div class="container">
-      <p class="section-eyebrow">Key Findings</p>
-      <h2 class="section-title">Empat angka utama</h2>
+ <!-- ============ KEY FINDINGS ============ -->
+ <section class="section section--alt">
+ <div class="container">
+ <p class="section-eyebrow">Key Findings</p>
+ <h2 class="section-title">Empat angka utama</h2>
 
-      <div class="bento">
-        <div class="bento__card">
-          <span class="bento__value">13,26x</span>
-          <span class="bento__label">Pertumbuhan Kumulatif <span class="term">(nilai IHSG sekarang dibanding awal 1995)</span></span>
-          <p class="bento__desc">Dari 470 poin <span class="term">(satuan indeks IHSG, bukan Rupiah)</span> di 2 Januari 1995, IHSG naik ke 6.234 poin di 3 Agustus 2026 (data terakhir) — setara kenaikan 1.226%, atau 13,26 kali lipat.</p>
-        </div>
-        <div class="bento__card">
-          <span class="bento__value">-65,33%</span>
-          <span class="bento__label">Drawdown <span class="term">(penurunan dari puncak)</span> Terdalam</span>
-          <p class="bento__desc">Dari puncak 740,80 poin <span class="term">(ATH — All-Time High, titik tertinggi yang pernah dicapai sebelumnya)</span>, IHSG anjlok ke 256,82 poin saat dasar Krisis 1998 (21 Sep 1998) — penurunan 65,33%, yang terdalam dari tiga krisis besar yang dianalisis (1998, 2008, 2020).</p>
-        </div>
-        <div class="bento__card">
-          <span class="bento__value">1.936 hari</span>
-          <span class="bento__label">Pemulihan Terlama</span>
-          <p class="bento__desc">Setara ±5,3 tahun — dari titik terendah Krisis 1998 (21 Sep 1998) sampai IHSG kembali ke level tertinggi sebelumnya (9 Jan 2004). Jauh lebih lama dibanding pemulihan pasca-Krisis 2008 (524 hari, ±1,4 tahun).</p>
-        </div>
-        <div class="bento__card">
-          <span class="bento__value">p = 0,0257</span>
-          <span class="bento__label">Volatilitas <span class="term">(fluktuasi harga)</span> Antar Dekade</span>
-          <p class="bento__desc">Uji Kruskal-Wallis membuktikan volatilitas berbeda signifikan antar dekade — bukan kebetulan acak.</p>
-        </div>
-      </div>
+ <div class="bento">
+ <div class="bento__card">
+ <span class="bento__value">13,26x</span>
+ <span class="bento__label">Pertumbuhan Kumulatif <span class="term">(nilai IHSG sekarang dibanding awal 1995)</span></span>
+ <p class="bento__desc">Dari 470 poin <span class="term">(satuan indeks IHSG, bukan Rupiah)</span> di 2 Januari 1995, IHSG naik ke 6.234 poin di 3 Agustus 2026 (data terakhir) - setara kenaikan 1.226%, atau 13,26 kali lipat.</p>
+ </div>
+ <div class="bento__card">
+ <span class="bento__value">-65,33%</span>
+ <span class="bento__label">Drawdown <span class="term">(penurunan dari puncak tertinggi ke titik terendah berikutnya, bisa berlangsung berbulan-bulan/bertahun-tahun, misal dari puncak 1997 sampai titik terendah 1998)</span> Terdalam</span>
+ <p class="bento__desc">Dari puncak 740,80 poin <span class="term">(ATH - All-Time High, titik tertinggi yang pernah dicapai sebelumnya)</span>, IHSG anjlok ke 256,82 poin saat dasar Krisis 1998 (21 Sep 1998) - penurunan 65,33%, yang terdalam dari tiga krisis besar yang dianalisis (1998, 2008, 2020).</p>
+ </div>
+ <div class="bento__card">
+ <span class="bento__value">1.936 hari</span>
+ <span class="bento__label">Pemulihan Terlama</span>
+ <p class="bento__desc">Setara ±5,3 tahun - dari titik terendah Krisis 1998 (21 Sep 1998) sampai IHSG kembali ke level tertinggi sebelumnya (9 Jan 2004). Jauh lebih lama dibanding pemulihan pasca-Krisis 2008 (524 hari, ±1,4 tahun).</p>
+ </div>
+ <div class="bento__card">
+ <span class="bento__value">p = 0,0257</span>
+ <span class="bento__label">Volatilitas <span class="term">(fluktuasi harga)</span> Antar Dekade</span>
+ <p class="bento__desc">Uji Kruskal-Wallis membuktikan volatilitas berbeda signifikan antar dekade - bukan kebetulan acak.</p>
+ </div>
+ </div>
 
-      <p class="bento-note">Catatan: Kartu 1 &amp; 2 menceritakan garis waktu yang sama (IHSG 1995–2026), tapi menyoroti titik berbeda — Kartu 1 membandingkan titik awal vs akhir data, Kartu 2 menyoroti satu episode krisis (1998) di tengah perjalanan itu.</p>
-    </div>
-  </section>
+ <p class="bento-note">Catatan: Kartu 1 &amp; 2 menceritakan garis waktu yang sama (IHSG 1995–2026), tapi menyoroti titik berbeda - Kartu 1 membandingkan titik awal vs akhir data, Kartu 2 menyoroti satu episode krisis (1998) di tengah perjalanan itu.</p>
+ </div>
+ </section>
 
-  <!-- ============ DEEP DIVE ============ -->
-  <section class="section">
-    <div class="container">
-    <div class="split">
-      <div class="split__label">
-      <p class="section-eyebrow">Deep Dive Findings</p>
-      <h2 class="section-title">Jawaban per pertanyaan riset</h2>
-      </div>
-      <div class="split__content">
+ <!-- ============ DEEP DIVE ============ -->
+ <section class="section">
+ <div class="container">
+ <div class="split">
+ <div class="split__label">
+ <p class="section-eyebrow">Deep Dive Findings</p>
+ <h2 class="section-title">Jawaban per pertanyaan riset</h2>
+ </div>
+ <div class="split__content">
 
-      <!-- Q1 -->
-      <article class="finding">
-        <h3 class="finding__q">Q1 — Bagaimana pertumbuhan IHSG dari 1995–2026?</h3>
-        <p class="body-text">IHSG menunjukkan tren pertumbuhan jangka panjang yang jelas, dari level sekitar <strong>470 poin</strong> di awal Januari 1995 menjadi sekitar <strong>6.234 poin</strong> pada data terakhir — tumbuh sekitar 13,26 kali lipat. Mayoritas pertumbuhan besar terjadi setelah IHSG pulih dari Krisis 1998, dengan akselerasi signifikan di dekade 2000-an dan 2010-an.</p>
-        <div class="callout callout--insight">
-          <strong>Insight:</strong> Dekade dengan return tertinggi umumnya adalah periode <em>setelah</em> pemulihan krisis (recovery rally), sementara dekade yang mencakup krisis besar cenderung menunjukkan return lebih rendah. Investor jangka panjang secara historis diuntungkan oleh tren pertumbuhan struktural ini, meski harus melewati volatilitas signifikan di periode tertentu.
-        </div>
-      </article>
+ <!-- Q1 -->
+ <article class="finding">
+ <h3 class="finding__q">Q1 - Bagaimana pertumbuhan IHSG dari 1995–2026?</h3>
+ <p class="body-text">IHSG menunjukkan tren pertumbuhan jangka panjang yang jelas, dari level sekitar <strong>470 poin</strong> di awal Januari 1995 menjadi sekitar <strong>6.234 poin</strong> pada data terakhir - tumbuh sekitar 13,26 kali lipat. Mayoritas pertumbuhan besar terjadi setelah IHSG pulih dari Krisis 1998, dengan akselerasi signifikan di dekade 2000-an dan 2010-an.</p>
+ <div class="callout callout--insight">
+ <strong>Insight:</strong> Dekade dengan return tertinggi umumnya adalah periode <em>setelah</em> pemulihan krisis (recovery rally), sementara dekade yang mencakup krisis besar cenderung menunjukkan return lebih rendah. Investor jangka panjang secara historis diuntungkan oleh tren pertumbuhan struktural ini, meski harus melewati volatilitas signifikan di periode tertentu.
+ </div>
+ </article>
 
-      <!-- Q2 -->
-      <article class="finding">
-        <h3 class="finding__q">Q2 — Seberapa dalam drawdown krisis besar, dan berapa lama pemulihannya?</h3>
-        <p class="body-text">Tiga krisis besar diidentifikasi dari data drawdown <span class="term">(penurunan harga dari titik tertinggi sebelumnya / all-time-high)</span>:</p>
+ <!-- Q2 -->
+ <article class="finding">
+ <h3 class="finding__q">Q2 - Seberapa dalam drawdown krisis besar, dan berapa lama pemulihannya?</h3>
+ <p class="body-text">Tiga krisis besar diidentifikasi dari data drawdown <span class="term">(penurunan dari puncak tertinggi ke titik terendah berikutnya, bisa berlangsung berbulan-bulan/bertahun-tahun, misal dari puncak 1997 sampai titik terendah 1998)</span>:</p>
 
-        <div class="table-wrap">
-          <table class="data-table">
-            <thead>
-              <tr><th>Periode</th><th>Titik Terendah</th><th>Max Drawdown</th><th>Lama Pemulihan</th></tr>
-            </thead>
-            <tbody>
-              <tr><td>Krisis 1998</td><td>21 Sep 1998</td><td>-65,33%</td><td>1.936 hari</td></tr>
-              <tr><td>Krisis 2008</td><td>28 Okt 2008</td><td>-60,73%</td><td>524 hari</td></tr>
-              <tr><td>Covid-19 2020</td><td>24 Mar 2020</td><td>-41,14%</td><td>597 hari</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <p class="body-text muted">Lama pemulihan dihitung sebagai jumlah hari kalender sejak titik terendah krisis hingga IHSG kembali menyentuh level tertinggi sebelum krisis tersebut (bukan sekadar "harga naik lagi").</p>
-        <div class="callout callout--insight">
-          <strong>Insight:</strong> Krisis yang dipicu masalah struktural domestik (1998) atau sistemik global (2008) cenderung punya drawdown lebih dalam dan pemulihan lebih lama, dibanding guncangan eksternal jangka pendek seperti Covid-19. Kedalaman krisis tidak selalu berbanding lurus dengan lamanya pemulihan — IHSG selalu berhasil pulih ke level sebelumnya, menegaskan karakter pasar yang volatile jangka pendek namun resilien jangka panjang.
-        </div>
-      </article>
+ <div class="table-wrap">
+ <table class="data-table">
+ <thead>
+ <tr><th>Periode</th><th>Titik Terendah</th><th>Max Drawdown</th><th>Lama Pemulihan</th></tr>
+ </thead>
+ <tbody>
+ <tr><td>Krisis 1998</td><td>21 Sep 1998</td><td>-65,33%</td><td>1.936 hari</td></tr>
+ <tr><td>Krisis 2008</td><td>28 Okt 2008</td><td>-60,73%</td><td>524 hari</td></tr>
+ <tr><td>Covid-19 2020</td><td>24 Mar 2020</td><td>-41,14%</td><td>597 hari</td></tr>
+ </tbody>
+ </table>
+ </div>
+ <p class="body-text muted">Lama pemulihan dihitung sebagai jumlah hari kalender sejak titik terendah krisis hingga IHSG kembali menyentuh level tertinggi sebelum krisis tersebut (bukan sekadar "harga naik lagi").</p>
+ <div class="callout callout--insight">
+ <strong>Insight:</strong> Krisis yang dipicu masalah struktural domestik (1998) atau sistemik global (2008) cenderung punya drawdown lebih dalam dan pemulihan lebih lama, dibanding guncangan eksternal jangka pendek seperti Covid-19. Kedalaman krisis tidak selalu berbanding lurus dengan lamanya pemulihan - IHSG selalu berhasil pulih ke level sebelumnya, menegaskan karakter pasar yang volatile jangka pendek namun resilien jangka panjang.
+ </div>
+ </article>
 
-      <!-- Q3 -->
-      <article class="finding">
-        <h3 class="finding__q">Q3 — Apakah volatilitas berubah dari dekade ke dekade?</h3>
-        <p class="body-text">Distribusi <em>rolling volatility</em> 30 hari <span class="term">(standar deviasi return harian dalam 30 hari trading terakhir, dihitung bergerak sepanjang waktu)</span> menunjukkan sebaran yang berbeda-beda antar dekade — dekade yang mencakup krisis besar (1998, 2008) menunjukkan rentang volatilitas yang jauh lebih lebar.</p>
-        <div class="callout callout--insight">
-          <strong>Insight:</strong> Volatilitas melonjak signifikan pada periode krisis dan mereda pada periode stabil — dikonfirmasi lewat uji statistik di section berikutnya.
-        </div>
-      </article>
+ <!-- Q3 -->
+ <article class="finding">
+ <h3 class="finding__q">Q3 - Apakah volatilitas berubah dari dekade ke dekade?</h3>
+ <p class="body-text">Distribusi <em>rolling volatility</em> 30 hari <span class="term">(standar deviasi return harian dalam 30 hari trading terakhir, dihitung bergerak sepanjang waktu)</span> menunjukkan sebaran yang berbeda-beda antar dekade - dekade yang mencakup krisis besar (1998, 2008) menunjukkan rentang volatilitas yang jauh lebih lebar.</p>
+ <div class="callout callout--insight">
+ <strong>Insight:</strong> Volatilitas melonjak signifikan pada periode krisis dan mereda pada periode stabil - dikonfirmasi lewat uji statistik di section berikutnya.
+ </div>
+ </article>
 
-      <!-- Q4 -->
-      <article class="finding">
-        <h3 class="finding__q">Q4 — Adakah pola musiman yang konsisten setiap tahun?</h3>
-        <p class="body-text">Rata-rata return harian per bulan (digabung dari 31 tahun data) menunjukkan variasi antar bulan — termasuk indikasi pola yang sering diasosiasikan dengan <em>window dressing</em> <span class="term">(kenaikan harga saham menjelang akhir tahun karena manajer investasi "mempercantik" portofolionya)</span> di bulan Desember. Namun, saat dipecah per tahun lewat heatmap, warna (positif/negatif) pada bulan yang sama ternyata bervariasi cukup besar antar tahun.</p>
-        <div class="callout callout--insight">
-          <strong>Insight:</strong> Ada indikasi pola musiman pada rata-rata jangka panjang, tapi pola ini <strong>tidak konsisten terjadi di setiap tahun</strong> — kondisi makroekonomi tahunan tampak jadi faktor yang lebih dominan dibanding efek kalender semata. Strategi timing pasar berbasis kalender saja berisiko tinggi tanpa didukung analisis fundamental tambahan.
-        </div>
-      </article>
+ <!-- Q4 -->
+ <article class="finding">
+ <h3 class="finding__q">Q4 - Adakah pola musiman yang konsisten setiap tahun?</h3>
+ <p class="body-text">Rata-rata return harian per bulan (digabung dari 31 tahun data) menunjukkan variasi antar bulan - termasuk indikasi pola yang sering diasosiasikan dengan <em>window dressing</em> <span class="term">(kenaikan harga saham menjelang akhir tahun karena manajer investasi "mempercantik" portofolionya)</span> di bulan Desember. Namun, saat dipecah per tahun lewat heatmap, warna (positif/negatif) pada bulan yang sama ternyata bervariasi cukup besar antar tahun.</p>
+ <div class="callout callout--insight">
+ <strong>Insight:</strong> Ada indikasi pola musiman pada rata-rata jangka panjang, tapi pola ini <strong>tidak konsisten terjadi di setiap tahun</strong> - kondisi makroekonomi tahunan tampak jadi faktor yang lebih dominan dibanding efek kalender semata. Strategi timing pasar berbasis kalender saja berisiko tinggi tanpa didukung analisis fundamental tambahan.
+ </div>
+ </article>
 
-      <!-- Q5 -->
-      <article class="finding">
-        <h3 class="finding__q">Q5 — Apakah volume perdagangan berkaitan dengan pergerakan harga?</h3>
-        <p class="body-text">Diuji menggunakan korelasi Spearman <span class="term">(mengukur kekuatan hubungan dua variabel dari -1 sampai +1, tanpa asumsi hubungan harus linear)</span> antara Volume dan return, baik di hari yang sama maupun hari berikutnya:</p>
+ <!-- Q5 -->
+ <article class="finding">
+ <h3 class="finding__q">Q5 - Apakah volume perdagangan berkaitan dengan pergerakan harga?</h3>
+ <p class="body-text">Diuji menggunakan korelasi Spearman <span class="term">(mengukur kekuatan hubungan dua variabel dari -1 sampai +1, tanpa asumsi hubungan harus linear)</span> antara Volume dan return, baik di hari yang sama maupun hari berikutnya:</p>
 
-        <div class="table-wrap">
-          <table class="data-table">
-            <thead>
-              <tr><th>Analisis</th><th>Spearman Corr</th><th>P-value</th><th>Signifikan?</th></tr>
-            </thead>
-            <tbody>
-              <tr><td>Volume vs Return (hari sama)</td><td>0,0337</td><td>0,00315</td><td>Yes</td></tr>
-              <tr><td>Volume vs Return (hari berikutnya)</td><td>0,0041</td><td>0,71846</td><td>No</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="callout callout--insight">
-          <strong>Insight:</strong> Meski korelasi hari-sama tercatat "signifikan" secara statistik, nilainya (0,0337) sangat mendekati nol — artinya hubungannya nyaris tidak ada secara praktis. Volume perdagangan saja <strong>tidak cukup kuat</strong> untuk dijadikan indikator arah harga. Lonjakan volume bisa terjadi baik saat pasar naik maupun turun (misalnya saat panic selling), sehingga Volume lebih cocok dipakai sebagai indikator intensitas aktivitas pasar, bukan sinyal arah harga mandiri.
-        </div>
-      </article>
-      </div>
-    </div>
-    </div>
-  </section>
+ <div class="table-wrap">
+ <table class="data-table">
+ <thead>
+ <tr><th>Analisis</th><th>Spearman Corr</th><th>P-value</th><th>Signifikan?</th></tr>
+ </thead>
+ <tbody>
+ <tr><td>Volume vs Return (hari sama)</td><td>0,0337</td><td>0,00315</td><td>Yes</td></tr>
+ <tr><td>Volume vs Return (hari berikutnya)</td><td>0,0041</td><td>0,71846</td><td>No</td></tr>
+ </tbody>
+ </table>
+ </div>
+ <div class="callout callout--insight">
+ <strong>Insight:</strong> Meski korelasi hari-sama tercatat "signifikan" secara statistik, nilainya (0,0337) sangat mendekati nol - artinya hubungannya nyaris tidak ada secara praktis. Volume perdagangan saja <strong>tidak cukup kuat</strong> untuk dijadikan indikator arah harga. Lonjakan volume bisa terjadi baik saat pasar naik maupun turun (misalnya saat panic selling), sehingga Volume lebih cocok dipakai sebagai indikator intensitas aktivitas pasar, bukan sinyal arah harga mandiri.
+ </div>
+ </article>
+ </div>
+ </div>
+ </div>
+ </section>
 
-  <!-- ============ STATISTICAL VALIDATION ============ -->
-  <section class="section section--alt">
-    <div class="container">
-    <div class="split">
-      <div class="split__label">
-      <p class="section-eyebrow">Statistical Validation</p>
-      <h2 class="section-title">Mengapa perlu diuji secara statistik?</h2>
-      <p class="section-lead">
-        Pola yang "terlihat" di grafik belum tentu benar-benar berarti — bisa saja itu kebetulan acak. Bagian ini menjelaskan uji statistik yang dipakai untuk mengecek apakah temuan di atas cukup meyakinkan untuk dipercaya, atau perlu dipandang dengan hati-hati.
-      </p>
-      </div>
-      <div class="split__content">
-      <div class="method-grid">
-        <div class="method-card">
-          <h3>Kruskal-Wallis Test</h3>
-          <p class="body-text"><strong>Kenapa metode ini?</strong> Dipilih karena distribusi return finansial umumnya tidak normal (fat-tailed / punya banyak nilai ekstrem), sehingga uji parametrik seperti ANOVA yang mengasumsikan data normal kurang tepat. Kruskal-Wallis adalah versi non-parametrik untuk membandingkan lebih dari 2 kelompok — di sini, 4 kelompok dekade.</p>
-          <p class="body-text"><strong>Cara membaca hasilnya:</strong> "Signifikan" (p &lt; 0,05) berarti perbedaan volatilitas antar dekade kemungkinan besar <em>bukan kebetulan acak</em> — cukup meyakinkan secara statistik bahwa dekade-dekade tersebut memang punya karakter volatilitas yang berbeda.</p>
-          <p class="body-text"><strong>Apa itu p-value?</strong> P-value adalah angka yang menunjukkan seberapa besar kemungkinan hasil ini muncul cuma karena kebetulan acak, bukan pola yang nyata. Semakin kecil p-value, semakin kecil kemungkinan itu kebetulan. Ambang umum yang dipakai: di bawah 0,05 dianggap cukup meyakinkan bukan kebetulan.</p>
-          <p class="body-text muted"><strong>Penting diluruskan:</strong> P-value kecil hanya menunjukkan bahwa perbedaan antar dekade ini nyata — bukan mengukur seberapa besar bedanya (itu ukuran lain yang tidak dihitung di sini). Uji ini juga tidak bilang dekade mana yang beda.</p>
-          <div class="table-wrap">
-            <table class="data-table">
-              <thead>
-                <tr><th>Dekade</th><th>Std Dev Return Harian</th></tr>
-              </thead>
-              <tbody>
-                <tr><td>1990-an</td><td>2,039%</td></tr>
-                <tr><td>2000-an</td><td>1,547%</td></tr>
-                <tr><td>2010-an</td><td>1,041%</td></tr>
-                <tr><td>2020-an</td><td>1,166%</td></tr>
-              </tbody>
-            </table>
-          </div>
-          <p class="body-text"><strong>Apa itu Standar Deviasi (Std Dev)?</strong> Mengukur seberapa jauh angka-angka biasanya menyimpang dari rata-ratanya. Semakin besar angkanya, semakin liar naik-turun datanya; semakin kecil, semakin stabil. Di sini dipakai untuk mengukur volatilitas: makin besar standar deviasi return harian, makin sering &amp; besar harga naik-turun di dekade itu.</p>
-          <div class="callout callout--insight">
-            <strong>Insight dari tabel:</strong> Polanya masuk akal, bukan disebabkan 1 dekade aneh sendiri — volatilitas tertinggi di 1990-an (era Krisis 1998), menurun bertahap ke 2010-an (paling stabil), lalu sedikit naik lagi di 2020-an (era Covid-19).
-          </div>
-          <div class="stat-row">
-            <span class="stat-chip">H-statistic: <strong>9,29</strong></span>
-            <span class="stat-chip">P-value: <strong>0,02567</strong></span>
-            <span class="stat-chip stat-chip--yes">Signifikan (p &lt; 0,05)</span>
-          </div>
-        </div>
+ <!-- ============ STATISTICAL VALIDATION ============ -->
+ <section class="section section--alt">
+ <div class="container">
+ <div class="split">
+ <div class="split__label">
+ <p class="section-eyebrow">Statistical Validation</p>
+ <h2 class="section-title">Mengapa perlu diuji secara statistik?</h2>
+ <p class="section-lead">
+ Pola yang "terlihat" di grafik belum tentu benar-benar berarti - bisa saja itu kebetulan acak. Bagian ini menjelaskan uji statistik yang dipakai untuk mengecek apakah temuan di atas cukup meyakinkan untuk dipercaya, atau perlu dipandang dengan hati-hati.
+ </p>
+ </div>
+ <div class="split__content">
+ <div class="method-grid">
+ <div class="method-card">
+ <h3>Kruskal-Wallis Test</h3>
+ <p class="body-text"><strong>Kenapa metode ini?</strong> Dipilih karena distribusi return finansial umumnya tidak normal (fat-tailed / punya banyak nilai ekstrem), sehingga uji parametrik seperti ANOVA yang mengasumsikan data normal kurang tepat. Kruskal-Wallis adalah versi non-parametrik untuk membandingkan lebih dari 2 kelompok - di sini, 4 kelompok dekade.</p>
+ <p class="body-text"><strong>Cara membaca hasilnya:</strong> "Signifikan" (p &lt; 0,05) berarti perbedaan volatilitas antar dekade kemungkinan besar <em>bukan kebetulan acak</em> - cukup meyakinkan secara statistik bahwa dekade-dekade tersebut memang punya karakter volatilitas yang berbeda.</p>
+ <p class="body-text"><strong>Apa itu p-value?</strong> P-value adalah angka yang menunjukkan seberapa besar kemungkinan hasil ini muncul cuma karena kebetulan acak, bukan pola yang nyata. Semakin kecil p-value, semakin kecil kemungkinan itu kebetulan. Ambang umum yang dipakai: di bawah 0,05 dianggap cukup meyakinkan bukan kebetulan.</p>
+ <p class="body-text muted"><strong>Penting diluruskan:</strong> P-value kecil hanya menunjukkan bahwa perbedaan antar dekade ini nyata - bukan mengukur seberapa besar bedanya (itu ukuran lain yang tidak dihitung di sini). Uji ini juga tidak bilang dekade mana yang beda.</p>
+ <div class="table-wrap">
+ <table class="data-table">
+ <thead>
+ <tr><th>Dekade</th><th>Std Dev Return Harian</th></tr>
+ </thead>
+ <tbody>
+ <tr><td>1990-an</td><td>2,039%</td></tr>
+ <tr><td>2000-an</td><td>1,547%</td></tr>
+ <tr><td>2010-an</td><td>1,041%</td></tr>
+ <tr><td>2020-an</td><td>1,166%</td></tr>
+ </tbody>
+ </table>
+ </div>
+ <p class="body-text"><strong>Apa itu Standar Deviasi (Std Dev)?</strong> Mengukur seberapa jauh angka-angka biasanya menyimpang dari rata-ratanya. Semakin besar angkanya, semakin liar naik-turun datanya; semakin kecil, semakin stabil. Di sini dipakai untuk mengukur volatilitas: makin besar standar deviasi return harian, makin sering &amp; besar harga naik-turun di dekade itu.</p>
+ <div class="callout callout--insight">
+ <strong>Insight dari tabel:</strong> Polanya masuk akal, bukan disebabkan 1 dekade aneh sendiri - volatilitas tertinggi di 1990-an (era Krisis 1998), menurun bertahap ke 2010-an (paling stabil), lalu sedikit naik lagi di 2020-an (era Covid-19).
+ </div>
+ <div class="stat-row">
+ <span class="stat-chip">H-statistic: <strong>9,29</strong></span>
+ <span class="stat-chip">P-value: <strong>0,02567</strong></span>
+ <span class="stat-chip stat-chip--yes">Signifikan (p &lt; 0,05)</span>
+ </div>
+ </div>
 
-        <div class="method-card">
-          <h3>Spearman Correlation</h3>
-          <p class="body-text"><strong>Kenapa metode ini?</strong> Dipilih (bukan Pearson) karena tidak mengasumsikan hubungan harus berbentuk garis lurus (linear) maupun data berdistribusi normal — cocok untuk data finansial yang cenderung punya banyak outlier ekstrem, misalnya saat krisis.</p>
-          <p class="body-text"><strong>Cara membaca hasilnya:</strong> Nilai korelasi berkisar -1 sampai +1. Makin dekat ke 0, makin lemah hubungannya. P-value menunjukkan apakah angka korelasi itu bisa dipercaya (p &lt; 0,05) atau kemungkinan besar cuma kebetulan.</p>
-          <div class="stat-row">
-            <span class="stat-chip">Corr (hari sama): <strong>0,0337</strong></span>
-            <span class="stat-chip">P-value: <strong>0,00315</strong></span>
-            <span class="stat-chip stat-chip--weak">Signifikan tapi sangat lemah</span>
-          </div>
-        </div>
-      </div>
+ <div class="method-card">
+ <h3>Spearman Correlation</h3>
+ <p class="body-text"><strong>Kenapa metode ini?</strong> Dipilih (bukan Pearson) karena tidak mengasumsikan hubungan harus berbentuk garis lurus (linear) maupun data berdistribusi normal - cocok untuk data finansial yang cenderung punya banyak outlier ekstrem, misalnya saat krisis.</p>
+ <p class="body-text"><strong>Cara membaca hasilnya:</strong> Nilai korelasi berkisar -1 sampai +1. Makin dekat ke 0, makin lemah hubungannya. P-value menunjukkan apakah angka korelasi itu bisa dipercaya (p &lt; 0,05) atau kemungkinan besar cuma kebetulan.</p>
+ <div class="stat-row">
+ <span class="stat-chip">Corr (hari sama): <strong>0,0337</strong></span>
+ <span class="stat-chip">P-value: <strong>0,00315</strong></span>
+ <span class="stat-chip stat-chip--weak">Signifikan tapi sangat lemah</span>
+ </div>
+ </div>
+ </div>
 
-      <div class="callout callout--warning">
-        <strong>Disclaimer penting:</strong> "Signifikan secara statistik" <strong>bukan berarti sebab-akibat</strong>, dan bukan jaminan pola ini akan berulang di masa depan. Hasil ini menunjukkan pola historis 1995–2026, bukan prediksi pergerakan pasar ke depan. Return dan volatilitas dihitung dari <code>Daily Return (%)</code> — perubahan persentase harian pada kolom <code>Close</code> — karena harga absolut tidak sebanding antar periode akibat pertumbuhan indeks dalam skala besar sepanjang 31 tahun.
-      </div>
-      </div>
-    </div>
-    </div>
-  </section>
+ <div class="callout callout--warning">
+ <strong>Disclaimer penting:</strong> "Signifikan secara statistik" <strong>bukan berarti sebab-akibat</strong>, dan bukan jaminan pola ini akan berulang di masa depan. Hasil ini menunjukkan pola historis 1995–2026, bukan prediksi pergerakan pasar ke depan. Return dan volatilitas dihitung dari <code>Daily Return (%)</code> - perubahan persentase harian pada kolom <code>Close</code> - karena harga absolut tidak sebanding antar periode akibat pertumbuhan indeks dalam skala besar sepanjang 31 tahun.
+ </div>
+ </div>
+ </div>
+ </div>
+ </section>
 
-  <!-- ============ BUSINESS INSIGHTS ============ -->
-  <section class="section">
-    <div class="container">
-    <div class="split">
-      <div class="split__label">
-      <p class="section-eyebrow">Business Insights</p>
-      <h2 class="section-title">Rekomendasi yang bisa ditindaklanjuti</h2>
-      </div>
-      <div class="split__content">
-      <ol class="numbered-list numbered-list--big">
-        <li>
-          <strong>Adopsi strategi jangka panjang (buy and hold) untuk investor ritel.</strong>
-          Mengingat karakter resiliensi jangka panjang IHSG meski melalui berbagai krisis, strategi ini berpotensi lebih sesuai dibanding trading jangka pendek yang sangat terpapar volatilitas.
-        </li>
-        <li>
-          <strong>Waspadai periode volatilitas tinggi berbasis konteks makroekonomi.</strong>
-          Karena volatilitas terbukti melonjak signifikan pada periode krisis tertentu, pemantauan indikator makroekonomi (bukan hanya data harga historis) penting untuk manajemen risiko portofolio.
-        </li>
-        <li>
-          <strong>Jangan mengandalkan pola musiman kalender sebagai strategi utama.</strong>
-          Karena pola musiman (seperti window dressing) tidak konsisten terjadi setiap tahun, strategi timing pasar berbasis kalender semata berisiko tinggi tanpa analisis fundamental tambahan.
-        </li>
-        <li>
-          <strong>Gunakan Volume sebagai indikator pelengkap, bukan sinyal utama.</strong>
-          Karena Volume tidak terbukti berkorelasi kuat dengan arah harga, sebaiknya dikombinasikan dengan indikator teknikal atau fundamental lain dalam pengambilan keputusan.
-        </li>
-        <li>
-          <strong>Perlakukan drawdown ekstrem sebagai bagian dari siklus normal pasar.</strong>
-          Data historis menunjukkan pemulihan pasca-krisis, meski butuh waktu, secara konsisten terjadi — sehingga panic selling saat krisis berpotensi merugikan investor jangka panjang.
-        </li>
-      </ol>
-      </div>
-    </div>
-    </div>
-  </section>
+ <!-- ============ BUSINESS INSIGHTS ============ -->
+ <section class="section">
+ <div class="container">
+ <div class="split">
+ <div class="split__label">
+ <p class="section-eyebrow">Business Insights</p>
+ <h2 class="section-title">Rekomendasi yang bisa ditindaklanjuti</h2>
+ </div>
+ <div class="split__content">
+ <ol class="numbered-list numbered-list--big">
+ <li>
+ <strong>Adopsi strategi jangka panjang (buy and hold) untuk investor ritel.</strong>
+ Mengingat karakter resiliensi jangka panjang IHSG meski melalui berbagai krisis, strategi ini berpotensi lebih sesuai dibanding trading jangka pendek yang sangat terpapar volatilitas.
+ </li>
+ <li>
+ <strong>Waspadai periode volatilitas tinggi berbasis konteks makroekonomi.</strong>
+ Karena volatilitas terbukti melonjak signifikan pada periode krisis tertentu, pemantauan indikator makroekonomi (bukan hanya data harga historis) penting untuk manajemen risiko portofolio.
+ </li>
+ <li>
+ <strong>Jangan mengandalkan pola musiman kalender sebagai strategi utama.</strong>
+ Karena pola musiman (seperti window dressing) tidak konsisten terjadi setiap tahun, strategi timing pasar berbasis kalender semata berisiko tinggi tanpa analisis fundamental tambahan.
+ </li>
+ <li>
+ <strong>Gunakan Volume sebagai indikator pelengkap, bukan sinyal utama.</strong>
+ Karena Volume tidak terbukti berkorelasi kuat dengan arah harga, sebaiknya dikombinasikan dengan indikator teknikal atau fundamental lain dalam pengambilan keputusan.
+ </li>
+ <li>
+ <strong>Perlakukan drawdown ekstrem sebagai bagian dari siklus normal pasar.</strong>
+ Data historis menunjukkan pemulihan pasca-krisis, meski butuh waktu, secara konsisten terjadi - sehingga panic selling saat krisis berpotensi merugikan investor jangka panjang.
+ </li>
+ </ol>
+ </div>
+ </div>
+ </div>
+ </section>
 
-  <!-- ============ DASHBOARD ============ -->
-  <section class="section section--dashboard" id="dashboard">
-    <div class="container">
-      <p class="section-eyebrow">Interactive Dashboard</p>
-      <h2 class="section-title">Eksplorasi data secara langsung</h2>
-      <p class="section-lead">Dashboard Tableau berikut memungkinkan Anda menjelajahi data IHSG 31 tahun secara interaktif — filter per periode, lihat tren, dan telusuri detail krisis.</p>
-    </div>
-    <div class="dashboard-embed">
-      <iframe
-        src="https://public.tableau.com/views/IHSG_Data_Management_Dashboard/IHSGMarketOverview?:showVizHome=no&amp;:embed=true"
-        loading="lazy"
-        allowfullscreen>
-      </iframe>
-    </div>
-    <div class="container">
-      <a href="https://public.tableau.com/app/profile/pandu.bashir/viz/IHSG_Data_Management_Dashboard/IHSGMarketOverview?publish=yes" target="_blank" rel="noopener" class="btn btn--outline">Buka Dashboard di Tab Baru ↗</a>
-    </div>
-  </section>
+ <!-- ============ DASHBOARD ============ -->
+ <section class="section section--dashboard" id="dashboard">
+ <div class="container">
+ <p class="section-eyebrow">Interactive Dashboard</p>
+ <h2 class="section-title">Eksplorasi data secara langsung</h2>
+ <p class="section-lead">Dashboard Tableau berikut memungkinkan Anda menjelajahi data IHSG 31 tahun secara interaktif - filter per periode, lihat tren, dan telusuri detail krisis.</p>
+ </div>
+ <div class="dashboard-embed">
+ <iframe
+ src="https://public.tableau.com/views/IHSG_Data_Management_Dashboard/IHSGMarketOverview?:showVizHome=no&amp;:embed=true"
+ loading="lazy"
+ allowfullscreen>
+ </iframe>
+ </div>
+ <div class="container">
+ <a href="https://public.tableau.com/app/profile/pandu.bashir/viz/IHSG_Data_Management_Dashboard/IHSGMarketOverview?publish=yes" target="_blank" rel="noopener" class="btn btn--outline">Buka Dashboard di Tab Baru ↗</a>
+ </div>
+ </section>
 
-  <!-- ============ SOURCE CODE ============ -->
-  <section class="section section--cta">
-    <div class="container container--narrow center">
-      <h2 class="section-title">Lihat kode &amp; metodologi lengkap</h2>
-      <p class="body-text">Seluruh proses analisis — dari data validation, feature engineering, hingga uji statistik — didokumentasikan lengkap di notebook Python pada repository GitHub berikut.</p>
-      <a href="https://github.com/pandubashir/IHSG-historical-market-analysis" target="_blank" rel="noopener" class="btn btn--primary btn--large">View Source Code on GitHub ↗</a>
-    </div>
-  </section>
+ <!-- ============ SOURCE CODE ============ -->
+ <section class="section section--cta">
+ <div class="container container--narrow center">
+ <h2 class="section-title">Lihat kode &amp; metodologi lengkap</h2>
+ <p class="body-text">Seluruh proses analisis - dari data validation, feature engineering, hingga uji statistik - didokumentasikan lengkap di notebook Python pada repository GitHub berikut.</p>
+ <a href="https://github.com/pandubashir/IHSG-historical-market-analysis" target="_blank" rel="noopener" class="btn btn--primary btn--large">View Source Code on GitHub ↗</a>
+ </div>
+ </section>
 
 </main>
 
 <footer class="site-footer">
-  <div class="container site-footer__inner">
-    <span>© 2026 Pandu Bashir Alamin.</span>
-    <a href="https://www.pandubashir.my.id/" class="btn btn--ghost btn--small">← Back to Portfolio</a>
-  </div>
+ <div class="container site-footer__inner">
+ <span>© 2026 Pandu Bashir Alamin.</span>
+ <a href="https://www.pandubashir.my.id/" class="btn btn--ghost btn--small">← Back to Portfolio</a>
+ </div>
 </footer>
 
 </body>
