@@ -242,13 +242,6 @@ code {
   font-size: 0.85rem;
   color: var(--text-muted);
 }
-.stat-sub {
-  display: block;
-  font-size: 0.75rem;
-  color: var(--text-muted);
-  opacity: 0.75;
-  margin-top: 2px;
-}
 
 /* ============ SPLIT LAYOUT (label + content, fills width) ============ */
 .split {
