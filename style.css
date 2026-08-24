@@ -249,6 +249,16 @@ code {
   opacity: 0.75;
   margin-top: 2px;
 }
+.hero__source {
+  margin: 18px 4px 0;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+.hero__source a {
+  color: var(--violet-2);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
 
 /* ============ SPLIT LAYOUT (label + content, fills width) ============ */
 .split {
@@ -575,7 +585,20 @@ code {
   padding-top: 84px;
   padding-bottom: 84px;
 }
-.section--dashboard .section-lead { margin-bottom: 40px; }
+.section--dashboard .section-lead { margin-bottom: 16px; }
+.dashboard-note {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-style: italic;
+  margin-bottom: 40px !important;
+}
+.dashboard-subheading {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin: 40px 0 16px;
+  color: var(--text-primary);
+}
 .dashboard-embed {
   width: 100vw;
   position: relative;

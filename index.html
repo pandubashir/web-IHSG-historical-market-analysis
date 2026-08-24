@@ -426,6 +426,7 @@
  <p class="section-eyebrow">Interactive Dashboard</p>
  <h2 class="section-title">Eksplorasi data secara langsung</h2>
  <p class="section-lead">Dashboard Tableau berikut memungkinkan Anda menjelajahi data IHSG 31 tahun secara interaktif - filter per periode, lihat tren, dan telusuri detail krisis.</p>
+ <p class="section-lead dashboard-note">Catatan: Dashboard ini tetap menganalisis keseluruhan 31 tahun data (7.681 hari), sama seperti analisis Python di atas. Hanya 2 dari 5 KPI (Latest Close &amp; Latest Daily Return) yang merupakan snapshot dari titik data terakhir (3 Agustus 2026) - selebihnya dihitung dari seluruh/rentang data historis. Data ditampilkan sesuai kondisi terakhir file dataset yang di-publish, bukan koneksi live ke bursa saham.</p>
  </div>
  <div class="dashboard-embed">
  <iframe
@@ -436,6 +437,39 @@
  </div>
  <div class="container">
  <a href="https://public.tableau.com/app/profile/pandu.bashir/viz/IHSG_Data_Management_Dashboard/IHSGMarketOverview?publish=yes" target="_blank" rel="noopener" class="btn btn--outline">Buka Dashboard di Tab Baru ↗</a>
+
+ <h3 class="dashboard-subheading">Cara membaca KPI di bagian atas dashboard</h3>
+ <div class="table-wrap">
+ <table class="data-table">
+ <thead>
+ <tr><th>KPI</th><th>Dihitung dari</th><th>Terkait Q?</th><th>Alasan</th></tr>
+ </thead>
+ <tbody>
+ <tr><td>Maximum Drawdown</td><td>Seluruh 31 tahun</td><td><strong>Q2</strong></td><td>Match langsung - angkanya (-65,33%) sama persis dengan Kartu 2 di atas</td></tr>
+ <tr><td>Average Daily Return</td><td>Seluruh 31 tahun</td><td><strong>Q1</strong> (pendukung)</td><td>Komponen dasar di balik <code>cumulative_return</code> (Kartu 1) - bukan angka utama Q1, tapi salah satu bahan hitungannya</td></tr>
+ <tr><td>30-Day Volatility</td><td>30 hari terakhir</td><td><strong>Q3</strong> (versi ringkas)</td><td>Konsep sama dengan uji Kruskal-Wallis, tapi snapshot 30 hari terakhir saja - bukan perbandingan antar dekade dengan uji statistik formal</td></tr>
+ <tr><td>Latest IHSG Close</td><td>Titik data terakhir</td><td>Tidak terkait Q manapun</td><td>Angka acuan (anchor) - memberi konteks "di mana posisi terakhir data ini" sebelum menjelajahi grafik historis 31 tahun, praktik umum di desain dashboard BI</td></tr>
+ <tr><td>Latest Daily Return</td><td>Titik data terakhir</td><td>Tidak terkait Q manapun</td><td>Sama seperti di atas - titik acuan awal, bukan bagian dari pembuktian riset Q1-Q5</td></tr>
+ </tbody>
+ </table>
+ </div>
+
+ <h3 class="dashboard-subheading">Cara membaca grafik, dan kaitannya dengan pertanyaan riset</h3>
+ <div class="table-wrap">
+ <table class="data-table">
+ <thead>
+ <tr><th>Grafik</th><th>Menjawab</th><th>Yang perlu diperhatikan</th></tr>
+ </thead>
+ <tbody>
+ <tr><td>IHSG Closing Price Trend</td><td><strong>Q1</strong> - Pertumbuhan</td><td>Tren naik jangka panjang, dengan 3 penurunan tajam yang terlihat sekilas (1998, 2008, 2020) sebelum pulih dan melanjutkan tren naik</td></tr>
+ <tr><td>IHSG Cumulative Return</td><td><strong>Q1</strong> - Pertumbuhan</td><td>Versi persentase dari Closing Price - memudahkan melihat total pertumbuhan sejak 1995</td></tr>
+ <tr><td>IHSG Drawdown</td><td><strong>Q2</strong> - Krisis &amp; Pemulihan</td><td>Setiap lembah tajam adalah 1 episode penurunan pasar; lembah terdalam (1998) mencapai -65,33%</td></tr>
+ <tr><td>IHSG Daily Return</td><td><strong>Q3</strong> - Volatilitas</td><td>Titik-titik lonjakan (spike) yang rapat menunjukkan periode volatilitas tinggi - paling padat di sekitar 1998 dan 2008/2020</td></tr>
+ <tr><td>IHSG Trading Volume</td><td><strong>Q5</strong> - Volume vs Harga</td><td>Lonjakan volume ekstrem terlihat di tengah grafik, tapi tidak selalu berbarengan dengan pergerakan harga besar - konsisten dengan temuan korelasi lemah di uji statistik</td></tr>
+ </tbody>
+ </table>
+ </div>
+ <p class="body-text muted">Catatan: Pola musiman (Q4) tidak ditampilkan sebagai grafik terpisah di dashboard ini karena temuannya tidak konsisten antar tahun - dibahas lengkap di section Deep Dive Findings di atas.</p>
  </div>
  </section>
 
