@@ -281,9 +281,32 @@
  <!-- Q3 -->
  <article class="finding">
  <h3 class="finding__q">Q3 - Apakah volatilitas berubah dari dekade ke dekade?</h3>
- <p class="body-text">Distribusi <em>rolling volatility</em> 30 hari <span class="term">(standar deviasi return harian dalam 30 hari trading terakhir, dihitung bergerak sepanjang waktu)</span> menunjukkan sebaran yang berbeda-beda antar dekade - dekade yang mencakup krisis besar (1998, 2008) menunjukkan rentang volatilitas yang jauh lebih lebar.</p>
+ <p class="body-text">Distribusi <em>rolling volatility</em> 30 hari <span class="term">(standar deviasi return harian dalam 30 hari trading terakhir, dihitung bergerak sepanjang waktu)</span> menunjukkan sebaran yang berbeda-beda antar dekade - dekade yang mencakup krisis besar (1998, 2008) menunjukkan rentang volatilitas yang jauh lebih lebar. Diuji menggunakan Kruskal-Wallis <span class="term">(uji non-parametrik untuk membandingkan sebaran lebih dari 2 kelompok, tanpa asumsi data berdistribusi normal)</span> pada daily return yang dikelompokkan per dekade:</p>
+ <div class="table-wrap">
+ <table class="data-table">
+ <thead>
+ <tr><th>Dekade</th><th>Std Dev Return Harian</th></tr>
+ </thead>
+ <tbody>
+ <tr><td>1990-an</td><td>2,039%</td></tr>
+ <tr><td>2000-an</td><td>1,547%</td></tr>
+ <tr><td>2010-an</td><td>1,041%</td></tr>
+ <tr><td>2020-an</td><td>1,166%</td></tr>
+ </tbody>
+ </table>
+ </div>
+ <div class="table-wrap">
+ <table class="data-table">
+ <thead>
+ <tr><th>Analisis</th><th>H-statistic</th><th>P-value</th><th>Signifikan?</th></tr>
+ </thead>
+ <tbody>
+ <tr><td>Volatilitas antar 4 dekade</td><td>9,29</td><td>0,0257</td><td>Yes</td></tr>
+ </tbody>
+ </table>
+ </div>
  <div class="callout callout--insight">
- <strong>Insight:</strong> Volatilitas melonjak signifikan pada periode krisis dan mereda pada periode stabil - dikonfirmasi lewat uji statistik di section berikutnya.
+ <strong>Insight:</strong> Volatilitas melonjak signifikan pada periode krisis dan mereda pada periode stabil - p-value di bawah 0,05 membuktikan perbedaan ini bukan kebetulan acak, dan polanya masuk akal: tertinggi di 1990-an (era Krisis 1998), menurun bertahap ke 2010-an (paling stabil), lalu sedikit naik lagi di 2020-an (era Covid-19) - bukan disebabkan 1 dekade anomali.
  </div>
  </article>
 
