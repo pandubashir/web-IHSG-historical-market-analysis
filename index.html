@@ -117,7 +117,7 @@
  </div>
 
  <div class="callout">
- <strong>Catatan kualitas data:</strong> Data bersih - tidak ada nilai kosong atau tanggal duplikat, dan struktur harga (High selalu ≥ Low/Open/Close, dst) valid secara logis. Ditemukan 109 baris dengan <code>Volume = 0</code>, hampir seluruhnya di tahun 1995 - kemungkinan besar karena pencatatan volume belum konsisten di masa awal bursa Indonesia beroperasi. Baris ini tetap dipakai (bukan dihapus) karena kolom <code>Close</code>-nya tetap valid, namun dicatat sebagai keterbatasan data saat menafsirkan analisis terkait Volume.
+ <strong>Catatan kualitas data:</strong> Data bersih - tidak ada nilai kosong atau tanggal duplikat, dan struktur harga (High selalu ≥ Low/Open/Close, dst) valid secara logis. Ditemukan 109 baris dengan <code>Volume = 0</code>, 100 dari 109 baris (92%) berada di tahun 1995 - kemungkinan besar karena pencatatan volume belum konsisten di masa awal bursa Indonesia beroperasi. Baris ini tetap dipakai (bukan dihapus) karena kolom <code>Close</code>-nya tetap valid, namun dicatat sebagai keterbatasan data saat menafsirkan analisis terkait Volume.
  </div>
  </div>
  </div>
@@ -144,7 +144,7 @@
  <li>Kapan drawdown <span class="term">(penurunan dari puncak tertinggi ke titik terendah berikutnya, bisa berlangsung berbulan-bulan/bertahun-tahun, misal dari puncak 1997 sampai titik terendah 1998)</span> terbesar terjadi, seberapa dalam, dan berapa lama pemulihannya?</li>
  <li>Apakah volatilitas harian cenderung naik, turun, atau stabil dari dekade ke dekade?</li>
  <li>Adakah pola musiman (misalnya kenaikan harga menjelang akhir tahun) yang konsisten setiap tahun?</li>
- <li>Apakah lonjakan volume perdagangan berkaitan dengan besaran pergerakan harga di hari yang sama atau hari berikutnya?</li>
+ <li>Apakah lonjakan volume perdagangan berkaitan dengan return harian (naik atau turunnya harga) di hari yang sama atau hari berikutnya?</li>
  </ol>
  <p class="body-text muted">
  Target pembaca temuan ini adalah investor ritel maupun analis yang ingin memahami karakteristik risiko jangka panjang pasar modal Indonesia sebagai dasar pengambilan keputusan - bukan sebagai sinyal beli/jual jangka pendek.
@@ -225,9 +225,9 @@
  <p class="bento__desc">Setara ±5,3 tahun - dari titik terendah Krisis 1998 (21 Sep 1998) sampai IHSG kembali ke level tertinggi sebelumnya (9 Jan 2004). Jauh lebih lama dibanding pemulihan pasca-Krisis 2008 (524 hari, ±1,4 tahun).</p>
  </div>
  <div class="bento__card">
- <span class="bento__value">p = 0,0257</span>
+ <span class="bento__value">p &lt; 0,001</span>
  <span class="bento__label">Volatilitas <span class="term">(fluktuasi harga)</span> Antar Dekade</span>
- <p class="bento__desc">Uji Kruskal-Wallis membuktikan volatilitas berbeda signifikan antar dekade - bukan kebetulan acak.</p>
+ <p class="bento__desc">Uji Kruskal-Wallis pada besarnya gerakan harian (nilai absolut return) menunjukkan volatilitas berbeda signifikan antar dekade - bukan kebetulan acak.</p>
  </div>
  </div>
 
@@ -248,7 +248,7 @@
  <!-- Q1 -->
  <article class="finding">
  <h3 class="finding__q">Q1 - Bagaimana pertumbuhan IHSG dari 1995–2026?</h3>
- <p class="body-text">IHSG menunjukkan tren pertumbuhan jangka panjang yang jelas, dari level sekitar <strong>470 poin</strong> di awal Januari 1995 menjadi sekitar <strong>6.234 poin</strong> pada data terakhir - tumbuh sekitar 13,26 kali lipat. Namun pertumbuhannya tidak merata: estimasi return tahunan per dekade <span class="term">(rata-rata daily return dikalikan 252 hari trading)</span> menunjukkan <strong>2000-an sebagai dekade paling cepat tumbuh (16,75%/tahun)</strong>, disusul 1990-an (12,64%) dan 2010-an (10,78%), sementara <strong>2020-an jauh paling stagnan (1,55%/tahun)</strong>.</p>
+ <p class="body-text">IHSG menunjukkan tren pertumbuhan jangka panjang yang jelas, dari level sekitar <strong>470 poin</strong> di awal Januari 1995 menjadi sekitar <strong>6.234 poin</strong> pada data terakhir - tumbuh sekitar 13,26 kali lipat. Namun pertumbuhannya tidak merata: dihitung majemuk <span class="term">(pertumbuhan berbunga-bunga per tahun, dari akhir dekade sebelumnya)</span>, <strong>2000-an paling cepat tumbuh (14,11%/tahun)</strong>, disusul 2010-an (9,53%) dan 1990-an (7,58%), sementara <strong>2020-an hampir tidak tumbuh (-0,16%/tahun: 6.299,5 menjadi 6.234,5)</strong>. Catatan: 1990-an di data hanya mencakup 1995-1999 dan 2020-an baru sampai Agustus 2026, jadi panjang dekadenya tidak sama.</p>
  <div class="callout callout--insight">
  <strong>Insight:</strong> 2000-an tampil sebagai dekade dengan pertumbuhan tercepat - kemungkinan besar karena efek <em>recovery rally</em> <span class="term">(kenaikan harga yang cepat dan berlangsung beberapa waktu setelah pasar jatuh, karena harga rebound dari titik yang sangat rendah)</span> pasca-Krisis 1998 yang baru pulih penuh di tahun 2004, sehingga sisa dekade itu terdorong tren naik kuat. Sebaliknya, 2020-an tercatat paling stagnan <span class="term">(hampir tidak tumbuh)</span>, konsisten dengan periode pemulihan pasca-Covid-19 yang juga terjadi di dekade ini. Investor jangka panjang secara historis tetap diuntungkan oleh tren pertumbuhan struktural <span class="term">(pertumbuhan jangka panjang yang didorong perkembangan ekonomi, bukan naik-turun sesaat)</span> 31 tahun, meski laju pertumbuhan antar dekade jauh dari merata.
  </div>
@@ -274,24 +274,24 @@
  <p class="body-text muted">Lama pemulihan dihitung sebagai jumlah hari kalender sejak titik terendah krisis hingga IHSG kembali menyentuh level tertinggi sebelum krisis tersebut (bukan sekadar "harga naik lagi").</p>
  <p class="body-text muted">Contoh cara baca Krisis 1998: IHSG turun dari puncak <strong>740,80 poin</strong> ke titik terendah <strong>256,82 poin</strong> pada 21 Sep 1998 (penurunan 65,33%). Baru pada <strong>9 Januari 2004</strong> - 1.936 hari kemudian, setara ±5 tahun 4 bulan - IHSG kembali menyentuh level 740,80 poin tersebut.</p>
  <div class="callout callout--insight">
- <strong>Insight:</strong> Krisis yang dipicu masalah struktural domestik (1998) atau sistemik global (2008) cenderung punya drawdown lebih dalam dan pemulihan lebih lama, dibanding guncangan eksternal jangka pendek seperti Covid-19. Kedalaman krisis tidak selalu berbanding lurus dengan lamanya pemulihan - IHSG selalu berhasil pulih ke level sebelumnya, menegaskan karakter pasar yang volatile jangka pendek namun resilien jangka panjang.
+ <strong>Insight:</strong> 1998 paling dalam (-65,33%) sekaligus paling lama pulih (1.936 hari). 2008 hampir sedalam itu (-60,73%) tapi pulih jauh lebih cepat (524 hari), bahkan lebih cepat dari Covid-19 yang jatuhnya lebih dangkal (-41,14%, 597 hari). Jadi kedalaman krisis tidak selalu berbanding lurus dengan lamanya pemulihan - IHSG selalu berhasil pulih ke level sebelumnya, menegaskan karakter pasar yang volatile jangka pendek namun resilien jangka panjang.
  </div>
  </article>
 
  <!-- Q3 -->
  <article class="finding">
  <h3 class="finding__q">Q3 - Apakah volatilitas berubah dari dekade ke dekade?</h3>
- <p class="body-text">Distribusi <em>rolling volatility</em> 30 hari <span class="term">(standar deviasi return harian dalam 30 hari trading terakhir, dihitung bergerak sepanjang waktu)</span> menunjukkan sebaran yang berbeda-beda antar dekade - dekade yang mencakup krisis besar (1998, 2008) menunjukkan rentang volatilitas yang jauh lebih lebar. Diuji menggunakan Kruskal-Wallis <span class="term">(uji non-parametrik untuk membandingkan sebaran lebih dari 2 kelompok, tanpa asumsi data berdistribusi normal)</span> pada daily return yang dikelompokkan per dekade:</p>
+ <p class="body-text">Secara visual, distribusi <em>rolling volatility</em> 30 hari <span class="term">(standar deviasi return harian dalam 30 hari trading terakhir, dihitung bergerak sepanjang waktu)</span> menunjukkan sebaran yang berbeda-beda antar dekade - dekade yang mencakup krisis besar (1998, 2008) menunjukkan rentang volatilitas yang jauh lebih lebar. Untuk mengujinya secara statistik, dipakai Kruskal-Wallis <span class="term">(uji non-parametrik untuk membandingkan sebaran lebih dari 2 kelompok, tanpa asumsi data berdistribusi normal)</span> pada <strong>besarnya gerakan harian</strong> <span class="term">(nilai absolut return harian: seberapa besar harga bergerak, tanpa memandang naik atau turun)</span> yang dikelompokkan per dekade:</p>
  <div class="table-wrap">
  <table class="data-table">
  <thead>
- <tr><th>Dekade</th><th>Std Dev Return Harian</th></tr>
+ <tr><th>Dekade</th><th>Std Dev Return Harian</th><th>Median Gerakan Harian (|return|)</th></tr>
  </thead>
  <tbody>
- <tr><td>1990-an</td><td>2,039%</td></tr>
- <tr><td>2000-an</td><td>1,547%</td></tr>
- <tr><td>2010-an</td><td>1,041%</td></tr>
- <tr><td>2020-an</td><td>1,166%</td></tr>
+ <tr><td>1990-an</td><td>2,039%</td><td>0,73%</td></tr>
+ <tr><td>2000-an</td><td>1,547%</td><td>0,81%</td></tr>
+ <tr><td>2010-an</td><td>1,041%</td><td>0,52%</td></tr>
+ <tr><td>2020-an</td><td>1,166%</td><td>0,56%</td></tr>
  </tbody>
  </table>
  </div>
@@ -301,21 +301,21 @@
  <tr><th>Analisis</th><th>H-statistic</th><th>P-value</th><th>Signifikan?</th></tr>
  </thead>
  <tbody>
- <tr><td>Volatilitas antar 4 dekade</td><td>9,29</td><td>0,0257</td><td>Yes</td></tr>
+ <tr><td>Besar gerakan harian antar 4 dekade</td><td>240,24</td><td>&lt; 0,001</td><td>Yes</td></tr>
  </tbody>
  </table>
  </div>
  <div class="callout callout--insight">
- <strong>Insight:</strong> Volatilitas melonjak signifikan pada periode krisis dan mereda pada periode stabil - p-value di bawah 0,05 membuktikan perbedaan ini bukan kebetulan acak, dan polanya masuk akal: tertinggi di 1990-an (era Krisis 1998), menurun bertahap ke 2010-an (paling stabil), lalu sedikit naik lagi di 2020-an (era Covid-19) - bukan disebabkan 1 dekade anomali.
+ <strong>Insight:</strong> Volatilitas berbeda signifikan antar dekade (p &lt; 0,001), bukan kebetulan acak. Kedua ukuran di tabel sepakat bahwa 2010-an (paling tenang) dan 2020-an jauh lebih stabil dibanding 1990-an dan 2000-an, dua dekade yang memuat krisis besar (1998 dan 2008). Urutan teratasnya berbeda: simpangan baku tertinggi di 1990-an karena banyak hari ekstrem saat Krisis 1998, sedangkan gerakan harian yang biasa paling besar di 2000-an.
  </div>
  </article>
 
  <!-- Q4 -->
  <article class="finding">
  <h3 class="finding__q">Q4 - Adakah pola musiman yang konsisten setiap tahun?</h3>
- <p class="body-text">Rata-rata return harian <span class="term">(rata-rata persentase naik/turunnya harga per hari)</span> per bulan, digabung dari 31 tahun data, menunjukkan variasi antar bulan - termasuk indikasi <em>rally akhir tahun</em> <span class="term">(kenaikan harga saham menjelang akhir tahun)</span> di bulan Desember, yang sering dikaitkan dengan <em>window dressing</em> <span class="term">(manajer investasi "mempercantik" portofolionya menjelang laporan akhir tahun)</span>. Saat dipecah per tahun lewat <em>heatmap</em> <span class="term">(peta warna: baris = tahun, kolom = bulan, hijau = rata-rata return positif, merah = negatif)</span>, Desember memang menonjol: rata-rata return-nya positif <span class="term">(di atas 0)</span> di 28 dari 31 tahun (90%), dan hanya negatif di 2000, 2022, dan 2024. Bulan lain mendekati acak <span class="term">(hasilnya seperti lempar koin: kadang naik, kadang turun, tanpa pola jelas)</span>, dengan hanya 45-75% tahun positif, misalnya Agustus hanya 15 dari 32 tahun atau 47%.</p>
+ <p class="body-text">Rata-rata return harian <span class="term">(rata-rata persentase naik/turunnya harga per hari)</span> per bulan, digabung dari 31 tahun data, menunjukkan variasi antar bulan - termasuk indikasi <em>rally akhir tahun</em> <span class="term">(kenaikan harga saham menjelang akhir tahun)</span> di bulan Desember, yang sering dikaitkan dengan <em>window dressing</em> <span class="term">(manajer investasi "mempercantik" portofolionya menjelang laporan akhir tahun)</span>. Saat dipecah per tahun lewat <em>heatmap</em> <span class="term">(peta warna: baris = tahun, kolom = bulan, hijau = rata-rata return positif, merah = negatif)</span>, Desember memang menonjol: rata-rata return-nya positif <span class="term">(di atas 0)</span> di 28 dari 31 tahun (90%), dan hanya negatif di 2000, 2022, dan 2024. Bulan lain mendekati acak <span class="term">(hasilnya seperti lempar koin: kadang naik, kadang turun, tanpa pola jelas)</span>, dengan hanya 45-75% tahun positif, misalnya Agustus hanya 15 dari 31 tahun penuh atau 48% (2026 tidak dihitung karena baru 1 hari data).</p>
  <div class="callout callout--insight">
- <strong>Insight:</strong> Hanya <strong>Desember</strong> yang menunjukkan pola cukup konsisten (positif di 90% tahun, jauh di atas bulan lain yang rata-rata sekitar 57%), sejalan dengan dugaan window dressing. Bulan lainnya mendekati acak, dan analisis ini belum menguji signifikansi statistiknya <span class="term">(uji untuk memastikan pola bukan sekadar kebetulan)</span>. Karena itu pola kalender sebaiknya dipakai sebagai konteks tambahan, bukan satu-satunya dasar strategi timing pasar <span class="term">(memilih kapan membeli atau menjual berdasarkan waktu tertentu)</span>.
+ <strong>Insight:</strong> Hanya <strong>Desember</strong> yang menunjukkan pola cukup konsisten (positif di 90% tahun, jauh di atas bulan lain yang rata-rata sekitar 58%), sejalan dengan dugaan window dressing. Bulan lainnya mendekati acak, dan analisis ini belum menguji signifikansi statistiknya <span class="term">(uji untuk memastikan pola bukan sekadar kebetulan)</span>. Karena itu pola kalender sebaiknya dipakai sebagai konteks tambahan, bukan satu-satunya dasar strategi timing pasar <span class="term">(memilih kapan membeli atau menjual berdasarkan waktu tertentu)</span>.
  </div>
  </article>
 
@@ -359,30 +359,30 @@
  <div class="method-grid">
  <div class="method-card">
  <h3>Kruskal-Wallis Test</h3>
- <p class="body-text"><strong>Kenapa metode ini?</strong> Dipilih karena distribusi return finansial umumnya tidak normal (fat-tailed / punya banyak nilai ekstrem), sehingga uji parametrik seperti ANOVA yang mengasumsikan data normal kurang tepat. Kruskal-Wallis adalah versi non-parametrik untuk membandingkan lebih dari 2 kelompok - di sini, 4 kelompok dekade.</p>
- <p class="body-text"><strong>Cara membaca hasilnya:</strong> "Signifikan" (p &lt; 0,05) berarti perbedaan volatilitas antar dekade kemungkinan besar <em>bukan kebetulan acak</em> - cukup meyakinkan secara statistik bahwa dekade-dekade tersebut memang punya karakter volatilitas yang berbeda.</p>
+ <p class="body-text"><strong>Kenapa metode ini?</strong> Dipilih karena distribusi return finansial umumnya tidak normal (fat-tailed / punya banyak nilai ekstrem), sehingga uji parametrik seperti ANOVA yang mengasumsikan data normal kurang tepat. Kruskal-Wallis adalah versi non-parametrik untuk membandingkan lebih dari 2 kelompok - di sini, 4 kelompok dekade. Yang diuji adalah <strong>besarnya gerakan harian</strong> (nilai absolut return), karena volatilitas berarti seberapa besar harga bergerak, bukan ke arah mana. Return bertanda mencampur hari naik dan turun, sehingga ukuran "liar atau tenang" tertutup oleh arahnya.</p>
+ <p class="body-text"><strong>Cara membaca hasilnya:</strong> "Signifikan" (p &lt; 0,05) berarti perbedaan besarnya gerakan harian antar dekade kemungkinan besar <em>bukan kebetulan acak</em> - cukup meyakinkan secara statistik bahwa dekade-dekade tersebut memang punya karakter volatilitas yang berbeda.</p>
  <p class="body-text"><strong>Apa itu p-value?</strong> P-value adalah angka yang menunjukkan seberapa besar kemungkinan hasil ini muncul cuma karena kebetulan acak, bukan pola yang nyata. Semakin kecil p-value, semakin kecil kemungkinan itu kebetulan. Ambang umum yang dipakai: di bawah 0,05 dianggap cukup meyakinkan bukan kebetulan.</p>
- <p class="body-text muted"><strong>Penting diluruskan:</strong> P-value kecil hanya menunjukkan bahwa perbedaan antar dekade ini nyata - bukan mengukur seberapa besar bedanya (itu ukuran lain yang tidak dihitung di sini). Uji ini juga tidak bilang dekade mana yang beda.</p>
+ <p class="body-text muted"><strong>Penting diluruskan:</strong> P-value kecil hanya menunjukkan bahwa perbedaan antar dekade ini nyata - bukan mengukur seberapa besar bedanya (itu ukuran lain yang tidak dihitung di sini). Uji ini juga tidak bilang dekade mana yang beda. Selain itu, volatilitas cenderung bergerombol (hari ekstrem sering berurutan), sehingga data harian tidak sepenuhnya independen dan p-value cenderung terlalu optimis - karena itu dilaporkan sebagai p &lt; 0,001, bukan angka eksak.</p>
  <div class="table-wrap">
  <table class="data-table">
  <thead>
- <tr><th>Dekade</th><th>Std Dev Return Harian</th></tr>
+ <tr><th>Dekade</th><th>Std Dev Return Harian</th><th>Median Gerakan Harian (|return|)</th></tr>
  </thead>
  <tbody>
- <tr><td>1990-an</td><td>2,039%</td></tr>
- <tr><td>2000-an</td><td>1,547%</td></tr>
- <tr><td>2010-an</td><td>1,041%</td></tr>
- <tr><td>2020-an</td><td>1,166%</td></tr>
+ <tr><td>1990-an</td><td>2,039%</td><td>0,73%</td></tr>
+ <tr><td>2000-an</td><td>1,547%</td><td>0,81%</td></tr>
+ <tr><td>2010-an</td><td>1,041%</td><td>0,52%</td></tr>
+ <tr><td>2020-an</td><td>1,166%</td><td>0,56%</td></tr>
  </tbody>
  </table>
  </div>
- <p class="body-text"><strong>Apa itu Standar Deviasi (Std Dev)?</strong> Mengukur seberapa jauh angka-angka biasanya menyimpang dari rata-ratanya. Semakin besar angkanya, semakin liar naik-turun datanya; semakin kecil, semakin stabil. Di sini dipakai untuk mengukur volatilitas: makin besar standar deviasi return harian, makin sering &amp; besar harga naik-turun di dekade itu.</p>
+ <p class="body-text"><strong>Apa itu Standar Deviasi (Std Dev)?</strong> Mengukur seberapa jauh angka-angka biasanya menyimpang dari rata-ratanya. Semakin besar angkanya, semakin liar naik-turun datanya; semakin kecil, semakin stabil. Di sini dipakai untuk mengukur volatilitas: makin besar standar deviasi return harian, makin sering &amp; besar harga naik-turun di dekade itu. <strong>Median gerakan harian</strong> adalah nilai tengah dari besarnya perubahan harga per hari (tanpa arah), sehingga tidak terpengaruh oleh beberapa hari ekstrem.</p>
  <div class="callout callout--insight">
- <strong>Insight dari tabel:</strong> Polanya masuk akal, bukan disebabkan 1 dekade aneh sendiri - volatilitas tertinggi di 1990-an (era Krisis 1998), menurun bertahap ke 2010-an (paling stabil), lalu sedikit naik lagi di 2020-an (era Covid-19).
+ <strong>Insight dari tabel:</strong> Kedua ukuran sepakat bahwa 2010-an dan 2020-an jauh lebih tenang dibanding 1990-an dan 2000-an (dekade yang memuat Krisis 1998 dan 2008). Simpangan baku tertinggi di 1990-an karena banyak hari ekstrem, sedangkan gerakan harian yang biasa paling besar di 2000-an.
  </div>
  <div class="stat-row">
- <span class="stat-chip">H-statistic: <strong>9,29</strong></span>
- <span class="stat-chip">P-value: <strong>0,02567</strong></span>
+ <span class="stat-chip">H-statistic: <strong>240,24</strong></span>
+ <span class="stat-chip">P-value: <strong>&lt; 0,001</strong></span>
  <span class="stat-chip stat-chip--yes">Signifikan (p &lt; 0,05)</span>
  </div>
  </div>
@@ -423,7 +423,7 @@
  </li>
  <li>
  <strong>Waspadai periode volatilitas tinggi berbasis konteks makroekonomi.</strong>
- Karena volatilitas terbukti melonjak signifikan pada periode krisis tertentu, pemantauan indikator makroekonomi (bukan hanya data harga historis) penting untuk manajemen risiko portofolio.
+ Karena volatilitas terbukti berbeda signifikan antar dekade dan paling tinggi di dekade yang memuat krisis besar, pemantauan indikator makroekonomi (bukan hanya data harga historis) penting untuk manajemen risiko portofolio.
  </li>
  <li>
  <strong>Jadikan pola musiman pertimbangan tambahan, bukan strategi utama.</strong>
